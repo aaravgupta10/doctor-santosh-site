@@ -1,0 +1,552 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dr. [Name] | Advanced IVF & Fertility Specialist Bengaluru</title>
+
+    <meta name="description"
+        content="Leading female IVF specialist in Bengaluru. Compassionate, ethical fertility treatments with high success rates. Book a consultation today.">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;600&family=Playfair+Display:ital,wght@0,400;0,600;1,400&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'medical-blue': '#2C5F78',    /* Trust, Professional */
+                        'soft-teal': '#E0F2F1',       /* Backgrounds, Calm */
+                        'luxury-gold': '#D4AF37',     /* Accents, Premium */
+                        'dark-text': '#333333',       /* Readable Text */
+                        'light-text': '#666666',      /* Secondary Text */
+                    },
+                    fontFamily: {
+                        'serif': ['"Playfair Display"', 'serif'],
+                        'sans': ['"Lato"', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+
+<body class="font-sans text-dark-text bg-white antialiased">
+
+    <nav class="fixed w-full z-50 bg-white/95 backdrop-blur-sm shadow-sm transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+
+                <div class="flex-shrink-0 flex items-center">
+                    <a href="#" class="font-serif text-2xl font-semibold text-medical-blue tracking-wide">
+                        Dr. <span class="text-luxury-gold">Santosh</span> IVFCare
+                    </a>
+                </div>
+
+                <div class="hidden md:flex space-x-8 items-center">
+                    <a href="#"
+                        class="text-gray-600 hover:text-medical-blue transition duration-300 font-medium">Home</a>
+                    <a href="#about"
+                        class="text-gray-600 hover:text-medical-blue transition duration-300 font-medium">About Dr.</a>
+                    <a href="#services"
+                        class="text-gray-600 hover:text-medical-blue transition duration-300 font-medium">Treatments</a>
+                    <a href="#success"
+                        class="text-gray-600 hover:text-medical-blue transition duration-300 font-medium">Success
+                        Stories</a>
+                </div>
+
+                <div class="hidden md:flex">
+                    <a href="#contact"
+                        class="bg-medical-blue text-white px-6 py-2.5 rounded-full font-medium hover:bg-blue-800 transition duration-300 shadow-md">
+                        Book Consultation
+                    </a>
+                </div>
+
+                <div class="md:hidden flex items-center">
+                    <button id="mobile-menu-btn" class="text-gray-600 hover:text-medical-blue focus:outline-none">
+                        <i class="fas fa-bars text-2xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-t">
+            <div class="px-4 pt-2 pb-6 space-y-2">
+                <a href="#" class="block py-2 text-gray-600 hover:text-medical-blue font-medium">Home</a>
+                <a href="#about" class="block py-2 text-gray-600 hover:text-medical-blue font-medium">About Dr.</a>
+                <a href="#services" class="block py-2 text-gray-600 hover:text-medical-blue font-medium">Treatments</a>
+                <a href="#contact"
+                    class="block mt-4 text-center bg-medical-blue text-white py-3 rounded-md font-medium">Book
+                    Consultation</a>
+            </div>
+        </div>
+    </nav>
+
+    <header class="relative pt-16 pb-32 flex content-center items-center justify-center min-h-screen">
+        <div class="absolute top-0 w-full h-full bg-center bg-cover"
+            style="background-image: url('https://images.unsplash.com/photo-1631217868264-e5b90bb7e133?ixlib=rb-4.0.3&auto=format&fit=crop&w=2091&q=80');">
+            <span class="w-full h-full absolute opacity-40 bg-black"></span>
+        </div>
+
+        <div class="container relative mx-auto">
+            <div class="items-center flex flex-wrap">
+                <div class="w-full lg:w-8/12 px-4 ml-auto mr-auto text-center">
+                    <div class="pr-2">
+                        <h1
+                            class="text-white font-serif text-4xl lg:text-6xl font-semibold leading-tight mb-6 animate-fade-in-up">
+                            Your Journey to Parenthood <br> Starts Here
+                        </h1>
+                        <p class="mt-4 text-lg text-gray-100 font-light max-w-2xl mx-auto mb-8">
+                            Combining advanced reproductive science with compassionate care.
+                            Specialized IVF & Fertility treatments in Bengaluru.
+                        </p>
+                        <div class="flex flex-col sm:flex-row justify-center gap-4">
+                            <a href="#contact"
+                                class="bg-luxury-gold text-white font-bold uppercase text-sm px-8 py-4 rounded shadow hover:shadow-lg outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150 hover:bg-yellow-600">
+                                Request Appointment
+                            </a>
+                            <a href="#services"
+                                class="bg-white text-medical-blue font-bold uppercase text-sm px-8 py-4 rounded shadow hover:shadow-lg outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150 hover:bg-gray-100">
+                                View Treatments
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="bg-medical-blue py-10 relative z-10 -mt-10 mx-4 lg:mx-20 rounded shadow-xl">
+        <div class="container mx-auto px-4">
+            <div
+                class="grid grid-cols-1 md:grid-cols-3 gap-8 text-center divide-y md:divide-y-0 md:divide-x divide-blue-800">
+
+                <div class="p-4">
+                    <i class="fas fa-user-md text-3xl text-luxury-gold mb-3"></i>
+                    <h3 class="text-4xl font-serif text-white font-bold">15+</h3>
+                    <p class="text-blue-100 uppercase tracking-widest text-xs mt-2">Years Experience</p>
+                </div>
+
+                <div class="p-4">
+                    <i class="fas fa-baby-carriage text-3xl text-luxury-gold mb-3"></i>
+                    <h3 class="text-4xl font-serif text-white font-bold">2,500+</h3>
+                    <p class="text-blue-100 uppercase tracking-widest text-xs mt-2">Successful Pregnancies</p>
+                </div>
+
+                <div class="p-4">
+                    <i class="fas fa-hospital text-3xl text-luxury-gold mb-3"></i>
+                    <h3 class="text-4xl font-serif text-white font-bold">98%</h3>
+                    <p class="text-blue-100 uppercase tracking-widest text-xs mt-2">Patient Satisfaction</p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="py-20 bg-soft-teal/30">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-wrap items-center">
+
+                <div class="w-full lg:w-5/12 px-4 mb-12 lg:mb-0">
+                    <div class="relative">
+                        <div
+                            class="absolute top-0 left-0 -mt-4 -ml-4 w-full h-full border-2 border-luxury-gold rounded-lg">
+                        </div>
+                        <img src="https://images.unsplash.com/photo-1559839734-2b71ea86b48e?ixlib=rb-4.0.3&auto=format&fit=crop&w=1170&q=80"
+                            alt="Dr. Santosh"
+                            class="relative rounded-lg shadow-lg w-full z-10 grayscale hover:grayscale-0 transition duration-500">
+                    </div>
+                </div>
+
+                <div class="w-full lg:w-7/12 px-4 lg:pl-12">
+                    <h4 class="text-luxury-gold font-bold uppercase tracking-widest text-sm mb-2">Meet Your Specialist
+                    </h4>
+                    <h2 class="text-4xl font-serif text-medical-blue font-bold mb-6">Dr. Santosh</h2>
+                    <p class="text-lg text-gray-600 mb-6 leading-relaxed">
+                        Infertility is not just a medical condition; it’s an emotional journey. Dr. Santosh combines
+                        <span class="font-semibold text-medical-blue">cutting-edge reproductive technology</span>
+                        with a compassionate, personalized approach.
+                    </p>
+                    <p class="text-gray-600 mb-8 leading-relaxed">
+                        With over a decade of experience in high-risk pregnancies and IVF cycles, she has helped
+                        thousands of couples in Bengaluru realize their dream of parenthood. She believes in
+                        transparency, ethics, and minimal intervention.
+                    </p>
+
+                    <ul class="space-y-4 mb-8">
+                        <li class="flex items-center text-gray-700">
+                            <i class="fas fa-check-circle text-luxury-gold mr-3"></i>
+                            <span>MBBS, MD (Obstetrics & Gynaecology)</span>
+                        </li>
+                        <li class="flex items-center text-gray-700">
+                            <i class="fas fa-check-circle text-luxury-gold mr-3"></i>
+                            <span>Fellowship in Reproductive Medicine</span>
+                        </li>
+                        <li class="flex items-center text-gray-700">
+                            <i class="fas fa-check-circle text-luxury-gold mr-3"></i>
+                            <span>Member of Indian Society for Assisted Reproduction (ISAR)</span>
+                        </li>
+                    </ul>
+
+                    <a href="#contact"
+                        class="text-medical-blue font-bold hover:text-luxury-gold transition duration-300 border-b-2 border-medical-blue hover:border-luxury-gold pb-1">
+                        Read Full Biography <i class="fas fa-arrow-right ml-2"></i>
+                    </a>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="services" class="py-20 bg-white">
+        <div class="container mx-auto px-4">
+
+            <div class="text-center max-w-3xl mx-auto mb-16" data-aos="fade-up">
+                <h4 class="text-luxury-gold font-bold uppercase tracking-widest text-sm mb-2">Clinical Excellence</h4>
+                <h2 class="text-3xl md:text-4xl font-serif text-medical-blue font-bold mb-4">World-Class Fertility
+                    Treatments</h2>
+                <p class="text-gray-600">Personalized protocols tailored to your unique medical history.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+
+                <div class="bg-white p-8 rounded-xl shadow-lg border border-gray-100 hover:shadow-2xl transition duration-300 group"
+                    data-aos="fade-up" data-aos-delay="100">
+                    <div
+                        class="w-16 h-16 bg-soft-teal rounded-full flex items-center justify-center mb-6 group-hover:bg-medical-blue transition duration-300">
+                        <i class="fas fa-dna text-2xl text-medical-blue group-hover:text-white"></i>
+                    </div>
+                    <h3 class="text-xl font-serif font-bold text-medical-blue mb-3">IVF (In Vitro Fertilization)</h3>
+                    <p class="text-gray-600 text-sm leading-relaxed mb-4">
+                        Advanced assisted reproduction where fertilization occurs in our state-of-the-art lab.
+                    </p>
+                    <a href="#" class="text-luxury-gold text-sm font-bold uppercase tracking-wide hover:underline">Learn
+                        More</a>
+                </div>
+
+                <div class="bg-white p-8 rounded-xl shadow-lg border border-gray-100 hover:shadow-2xl transition duration-300 group"
+                    data-aos="fade-up" data-aos-delay="200">
+                    <div
+                        class="w-16 h-16 bg-soft-teal rounded-full flex items-center justify-center mb-6 group-hover:bg-medical-blue transition duration-300">
+                        <i class="fas fa-baby text-2xl text-medical-blue group-hover:text-white"></i>
+                    </div>
+                    <h3 class="text-xl font-serif font-bold text-medical-blue mb-3">IUI (Intrauterine Insemination)</h3>
+                    <p class="text-gray-600 text-sm leading-relaxed mb-4">
+                        A first-line, less invasive treatment placing sperm directly into the uterus during ovulation.
+                    </p>
+                    <a href="#" class="text-luxury-gold text-sm font-bold uppercase tracking-wide hover:underline">Learn
+                        More</a>
+                </div>
+
+                <div class="bg-white p-8 rounded-xl shadow-lg border border-gray-100 hover:shadow-2xl transition duration-300 group"
+                    data-aos="fade-up" data-aos-delay="300">
+                    <div
+                        class="w-16 h-16 bg-soft-teal rounded-full flex items-center justify-center mb-6 group-hover:bg-medical-blue transition duration-300">
+                        <i class="fas fa-mars text-2xl text-medical-blue group-hover:text-white"></i>
+                    </div>
+                    <h3 class="text-xl font-serif font-bold text-medical-blue mb-3">Male Fertility Solutions</h3>
+                    <p class="text-gray-600 text-sm leading-relaxed mb-4">
+                        Comprehensive diagnosis and treatment including ICSI, TESA, and PESA procedures.
+                    </p>
+                    <a href="#" class="text-luxury-gold text-sm font-bold uppercase tracking-wide hover:underline">Learn
+                        More</a>
+                </div>
+
+                <div class="bg-white p-8 rounded-xl shadow-lg border border-gray-100 hover:shadow-2xl transition duration-300 group"
+                    data-aos="fade-up" data-aos-delay="100">
+                    <div
+                        class="w-16 h-16 bg-soft-teal rounded-full flex items-center justify-center mb-6 group-hover:bg-medical-blue transition duration-300">
+                        <i class="fas fa-heart text-2xl text-medical-blue group-hover:text-white"></i>
+                    </div>
+                    <h3 class="text-xl font-serif font-bold text-medical-blue mb-3">High-Risk Pregnancy</h3>
+                    <p class="text-gray-600 text-sm leading-relaxed mb-4">
+                        Specialized antenatal care ensuring safety for both mother and baby till delivery.
+                    </p>
+                    <a href="#" class="text-luxury-gold text-sm font-bold uppercase tracking-wide hover:underline">Learn
+                        More</a>
+                </div>
+
+                <div class="bg-white p-8 rounded-xl shadow-lg border border-gray-100 hover:shadow-2xl transition duration-300 group"
+                    data-aos="fade-up" data-aos-delay="200">
+                    <div
+                        class="w-16 h-16 bg-soft-teal rounded-full flex items-center justify-center mb-6 group-hover:bg-medical-blue transition duration-300">
+                        <i class="fas fa-snowflake text-2xl text-medical-blue group-hover:text-white"></i>
+                    </div>
+                    <h3 class="text-xl font-serif font-bold text-medical-blue mb-3">Egg & Sperm Freezing</h3>
+                    <p class="text-gray-600 text-sm leading-relaxed mb-4">
+                        Preserve your fertility for the future with advanced cryopreservation technology.
+                    </p>
+                    <a href="#" class="text-luxury-gold text-sm font-bold uppercase tracking-wide hover:underline">Learn
+                        More</a>
+                </div>
+
+                <div class="bg-white p-8 rounded-xl shadow-lg border border-gray-100 hover:shadow-2xl transition duration-300 group"
+                    data-aos="fade-up" data-aos-delay="300">
+                    <div
+                        class="w-16 h-16 bg-soft-teal rounded-full flex items-center justify-center mb-6 group-hover:bg-medical-blue transition duration-300">
+                        <i class="fas fa-comments text-2xl text-medical-blue group-hover:text-white"></i>
+                    </div>
+                    <h3 class="text-xl font-serif font-bold text-medical-blue mb-3">Fertility Counseling</h3>
+                    <p class="text-gray-600 text-sm leading-relaxed mb-4">
+                        Emotional support and guidance throughout your treatment journey.
+                    </p>
+                    <a href="#" class="text-luxury-gold text-sm font-bold uppercase tracking-wide hover:underline">Learn
+                        More</a>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="reviews" class="py-20 bg-gray-50">
+        <div class="container mx-auto px-4">
+
+            <div class="text-center max-w-3xl mx-auto mb-16" data-aos="fade-up">
+                <div class="flex items-center justify-center gap-2 mb-4">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/2/2f/Google_2015_logo.svg" alt="Google"
+                        class="h-8">
+                    <span class="text-gray-600 font-medium">Rating</span>
+                </div>
+                <h2 class="text-3xl md:text-4xl font-serif text-medical-blue font-bold mb-4">What Our Patients Say</h2>
+                <div class="flex justify-center items-center gap-1 text-yellow-400 text-xl mb-2">
+                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                        class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+                </div>
+                <p class="text-gray-600 font-bold">4.9/5 Average Rating based on verified visits at Nova IVF Koramangala
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+
+                <div class="bg-white p-8 rounded-xl shadow-md relative" data-aos="fade-up" data-aos-delay="100">
+                    <div class="absolute top-6 right-6 opacity-50">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/5/53/Google_%22G%22_Logo.svg" alt="G"
+                            class="w-6 h-6">
+                    </div>
+
+                    <div class="flex items-center mb-4">
+                        <div
+                            class="w-10 h-10 bg-purple-100 rounded-full flex items-center justify-center text-purple-600 font-bold mr-3">
+                            V</div>
+                        <div>
+                            <h5 class="font-bold text-gray-800 text-sm">Verified Patient</h5>
+                            <span class="text-xs text-gray-500">Google Review</span>
+                        </div>
+                    </div>
+                    <div class="text-yellow-400 text-xs mb-3">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                            class="fas fa-star"></i><i class="fas fa-star"></i>
+                    </div>
+                    <p class="text-gray-600 text-sm leading-relaxed italic">
+                        "Thanks to doctor santosh Gupta mam and rakshita mam, esp doctor santosh Gupta mam helped us in
+                        the entire process of pregnancy, we tried for last 6 years but were unable to achieve pregnancy,
+                        but doctor mam suggested with very much care... finally we achieved very very thankful to doctor
+                        mam throughout our life"
+                    </p>
+                </div>
+
+                <div class="bg-white p-8 rounded-xl shadow-md relative" data-aos="fade-up" data-aos-delay="200">
+                    <div class="absolute top-6 right-6 opacity-50">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/5/53/Google_%22G%22_Logo.svg" alt="G"
+                            class="w-6 h-6">
+                    </div>
+
+                    <div class="flex items-center mb-4">
+                        <div
+                            class="w-10 h-10 bg-blue-100 rounded-full flex items-center justify-center text-blue-600 font-bold mr-3">
+                            V</div>
+                        <div>
+                            <h5 class="font-bold text-gray-800 text-sm">Verified Patient</h5>
+                            <span class="text-xs text-gray-500">Google Review</span>
+                        </div>
+                    </div>
+                    <div class="text-yellow-400 text-xs mb-3">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                            class="fas fa-star"></i><i class="fas fa-star"></i>
+                    </div>
+                    <p class="text-gray-600 text-sm leading-relaxed italic">
+                        "Dr. Santhosh Gupta was incredibly supportive, knowledgeable, and compassionate throughout my
+                        fertility journey. Thanks to their expert guidance and care, I was able to conceive
+                        successfully. So grateful."
+                    </p>
+                </div>
+
+                <div class="bg-white p-8 rounded-xl shadow-md relative" data-aos="fade-up" data-aos-delay="300">
+                    <div class="absolute top-6 right-6 opacity-50">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/5/53/Google_%22G%22_Logo.svg" alt="G"
+                            class="w-6 h-6">
+                    </div>
+
+                    <div class="flex items-center mb-4">
+                        <div
+                            class="w-10 h-10 bg-green-100 rounded-full flex items-center justify-center text-green-600 font-bold mr-3">
+                            V</div>
+                        <div>
+                            <h5 class="font-bold text-gray-800 text-sm">Verified Patient</h5>
+                            <span class="text-xs text-gray-500">Google Review</span>
+                        </div>
+                    </div>
+                    <div class="text-yellow-400 text-xs mb-3">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                            class="fas fa-star"></i><i class="fas fa-star"></i>
+                    </div>
+                    <p class="text-gray-600 text-sm leading-relaxed italic">
+                        "Dr. Santosh Gupta and the entire team were highly professional, caring, and reassuring
+                        throughout the process... I would definitely recommend this clinic to women considering the
+                        procedure—it was smooth, safe, and handled with great expertise."
+                    </p>
+                </div>
+
+            </div>
+
+            <div class="text-center mt-12">
+                <a href="https://www.google.com/maps/search/Nova+IVF+Fertility+Koramangala" target="_blank"
+                    class="inline-flex items-center text-medical-blue font-bold border border-medical-blue px-6 py-3 rounded hover:bg-medical-blue hover:text-white transition duration-300">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/5/53/Google_%22G%22_Logo.svg" alt="G"
+                        class="w-4 h-4 mr-2 grayscale brightness-200">
+                    Read All Reviews on Google Maps
+                </a>
+            </div>
+
+        </div>
+    </section>
+
+    <section id="contact" class="py-20 bg-medical-blue text-white relative">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-wrap">
+
+                <div class="w-full lg:w-5/12 mb-12 lg:mb-0" data-aos="fade-right">
+                    <h4 class="text-luxury-gold font-bold uppercase tracking-widest text-sm mb-4">Get in Touch</h4>
+                    <h2 class="text-4xl font-serif font-bold mb-6">Start Your Journey</h2>
+                    <p class="text-blue-100 mb-8 leading-relaxed">
+                        Ready to take the next step? Schedule a confidential consultation with Dr. Santosh at Nova IVF
+                        Fertility.
+                    </p>
+
+                    <div class="space-y-6">
+                        <div class="flex items-start">
+                            <i class="fas fa-map-marker-alt text-luxury-gold text-xl mt-1 mr-4"></i>
+                            <div>
+                                <h5 class="font-bold mb-3">Clinic Locations</h5>
+
+                                <div class="mb-4">
+                                    <span
+                                        class="text-luxury-gold text-xs font-bold uppercase tracking-wide border border-luxury-gold px-2 py-0.5 rounded">Koramangala</span>
+                                    <p class="text-blue-200 text-sm mt-2 leading-relaxed">
+                                        Nova IVF Fertility<br>
+                                        Koramangala, Bengaluru 560034
+                                    </p>
+                                </div>
+
+                                <div>
+                                    <span
+                                        class="text-luxury-gold text-xs font-bold uppercase tracking-wide border border-luxury-gold px-2 py-0.5 rounded">Bannerghatta
+                                        Rd</span>
+                                    <p class="text-blue-200 text-sm mt-2 leading-relaxed">
+                                        1st Floor 236/1, Hulimavu Gate,<br>
+                                        Arekere, Bengaluru 560076
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <i class="fas fa-phone-alt text-luxury-gold text-xl mt-1 mr-4"></i>
+                            <div>
+                                <h5 class="font-bold">Call for Appointments</h5>
+                                <a href="tel:08049388781" class="text-blue-200 text-sm hover:text-white transition">
+                                    080 4938 8781
+                                </a>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <i class="fas fa-envelope text-luxury-gold text-xl mt-1 mr-4"></i>
+                            <div>
+                                <h5 class="font-bold">Email Us</h5>
+                                <p class="text-blue-200 text-sm">consult@drsantosh.com</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="w-full lg:w-6/12 lg:ml-auto" data-aos="fade-left">
+                    <form action="https://formspree.io/f/https://formspree.io/f/xvzplgkl" method="POST"
+                        class="bg-white rounded-xl p-8 shadow-2xl text-gray-800">
+
+                        <div class="mb-6">
+                            <label class="block text-sm font-bold mb-2">Full Name</label>
+                            <input type="text" name="name" required
+                                class="w-full px-4 py-3 rounded-lg bg-gray-50 border border-gray-200 focus:border-medical-blue focus:outline-none transition"
+                                placeholder="Enter your name">
+                        </div>
+
+                        <div class="mb-6">
+                            <label class="block text-sm font-bold mb-2">Phone Number</label>
+                            <input type="tel" name="phone" required
+                                class="w-full px-4 py-3 rounded-lg bg-gray-50 border border-gray-200 focus:border-medical-blue focus:outline-none transition"
+                                placeholder="+91">
+                        </div>
+
+                        <div class="mb-6">
+                            <label class="block text-sm font-bold mb-2">Message (Optional)</label>
+                            <textarea name="message"
+                                class="w-full px-4 py-3 rounded-lg bg-gray-50 border border-gray-200 focus:border-medical-blue focus:outline-none transition h-32"
+                                placeholder="How can we help you?"></textarea>
+                        </div>
+
+                        <button type="submit"
+                            class="w-full bg-medical-blue text-white font-bold py-4 rounded-lg hover:bg-blue-800 transition duration-300 shadow-lg">
+                            Request Consultation
+                        </button>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-gray-900 text-white py-8 border-t border-gray-800">
+        <div class="container mx-auto px-4 text-center">
+            <p class="text-gray-500 text-sm">© 2025 Dr. Santosh Fertility. Practicing at Nova IVF Koramangala.</p>
+        </div>
+    </footer>
+
+    <a href="https://wa.me/919876543210?text=Hello%20Dr.%20Santosh,%20I%20would%20like%20to%20book%20a%20consultation."
+        target="_blank"
+        class="fixed bottom-6 right-6 bg-green-500 text-white w-14 h-14 rounded-full flex items-center justify-center shadow-lg hover:bg-green-600 transition-all duration-300 z-50 animate-bounce">
+        <i class="fab fa-whatsapp text-3xl"></i>
+    </a>
+
+    <script>
+        const btn = document.getElementById('mobile-menu-btn');
+        const menu = document.getElementById('mobile-menu');
+
+        btn.addEventListener('click', () => {
+            menu.classList.toggle('hidden');
+        });
+    </script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 1000,   /* Animation lasts 1 second */
+            once: true,       /* Only animate once (don't fade out when scrolling up) */
+            offset: 100,      /* Start animation 100px before element is visible */
+        }); 
+    </script>
+    <a href="https://wa.me/918762689540?text=Hello%20Dr.%20Santosh,%20I%20visited%20your%20website%20and%20have%20a%20query."
+        target="_blank"
+        class="fixed bottom-6 right-6 bg-green-500 text-white w-14 h-14 rounded-full flex items-center justify-center shadow-lg hover:bg-green-600 transition-all duration-300 z-50 animate-bounce">
+        <i class="fab fa-whatsapp text-3xl"></i>
+    </a>
+</body>
+
+</html>
