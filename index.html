@@ -2,64 +2,48 @@
 <html lang="en">
 
 <head>
-    <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-3LYE4MRQE5"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
         function gtag() { dataLayer.push(arguments); }
         gtag('js', new Date());
-
         gtag('config', 'G-3LYE4MRQE5');
     </script>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>Dr. Santosh | Top Fertility Specialist Bengaluru | Nova IVF</title>
-    <!--link rel="icon" href="favicon2.png" type="image/png"-->
-    <link rel="icon" href="assets/images/Cover.jpg" type="image/jpeg">
     <meta name="description"
-        content="Expert IVF & Fertility treatments by Dr. Santosh at Nova IVF Bengaluru. High success rates, ethical care, and personalized support in Koramangala & Bannerghatta.">
-    <meta name="keywords"
-        content="IVF specialist Bengaluru, Dr. Santosh Fertility, Nova IVF doctor, Infertility treatment Bangalore, IUI, ICSI, Female Gynecologist">
-    <meta name="author" content="Dr. Santosh Fertility">
+        content="Expert IVF & Fertility treatments by Dr. Santosh. High success rates, ethical care in Koramangala & Bannerghatta.">
+    <meta property="og:image" content="https://cdn.pixabay.com/photo/2024/02/16/09/20/doctor-8577176_1280.png">
 
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://aaravgupta10.github.io/doctor-santosh-site/">
-    <meta property="og:title" content="Dr. Santosh | Fertility & IVF Specialist">
-    <meta property="og:description"
-        content="Start your journey to parenthood with ethical, high-success fertility care in Bengaluru.">
-    <meta property="og:image"
-        content="https://images.unsplash.com/photo-1559839734-2b71ea860630?q=80&w=1200&auto=format&fit=crop">
-
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Dr. Santosh | Fertility Specialist">
-    <meta name="twitter:description" content="Ethical, transparent, and success-oriented fertility care at Nova IVF.">
-
-    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="icon" href="assets/images/Cover.jpg" type="image/jpeg">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
-        href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;600&family=Playfair+Display:ital,wght@0,400;0,600;1,400&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Playfair+Display:ital,wght@0,400;0,600;1,400&display=swap"
         rel="stylesheet">
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
+    <script src="https://cdn.tailwindcss.com"></script>
     <script>
         tailwind.config = {
             theme: {
                 extend: {
                     colors: {
-                        'medical-blue': '#2C5F78',    /* Trust, Professional */
-                        'soft-teal': '#E0F2F1',       /* Backgrounds, Calm */
-                        'luxury-gold': '#D4AF37',     /* Accents, Premium */
-                        'dark-text': '#333333',       /* Readable Text */
-                        'light-text': '#666666',      /* Secondary Text */
+                        brand: {
+                            gold: '#D4AF37',       /* Luxury Gold */
+                            navy: '#0B1120',       /* Deep Navy */
+                            cream: '#F9F9F7',      /* Soft Background */
+                            slate: '#334155',      /* Text Gray */
+                        }
                     },
                     fontFamily: {
-                        'serif': ['"Playfair Display"', 'serif'],
-                        'sans': ['"Lato"', 'sans-serif'],
+                        serif: ['"Playfair Display"', 'serif'],
+                        sans: ['"Lato"', 'sans-serif'],
                     }
                 }
             }
@@ -69,51 +53,36 @@
 
 <body class="font-sans text-dark-text bg-white antialiased">
 
-    <nav class="fixed w-full z-50 bg-white/95 backdrop-blur-sm shadow-sm transition-all duration-300">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="flex justify-between items-center h-20">
+    <nav class="absolute top-0 left-0 w-full z-50 py-6">
+        <div class="max-w-7xl mx-auto px-6 lg:px-8">
+            <div class="flex justify-between items-center">
 
-                <div class="flex-shrink-0 flex items-center">
-                    <a href="#" class="font-serif text-2xl font-semibold text-medical-blue tracking-wide">
-                        Dr. <span class="text-luxury-gold">Santosh</span> IVFCare
-                    </a>
+                <div class="flex items-center space-x-2">
+                    <i class="fa-solid fa-user-doctor text-brand-gold text-2xl"></i>
+                    <span class="font-serif text-2xl font-bold tracking-wide text-brand-navy">
+                        Dr. <span class="text-brand-gold">Santosh</span>
+                    </span>
                 </div>
 
                 <div class="hidden md:flex space-x-8 items-center">
-                    <a href="#"
-                        class="text-gray-600 hover:text-medical-blue transition duration-300 font-medium">Home</a>
+                    <a href="#home"
+                        class="text-brand-navy hover:text-brand-gold font-medium tracking-wide transition">Home</a>
                     <a href="#about"
-                        class="text-gray-600 hover:text-medical-blue transition duration-300 font-medium">About Dr.</a>
-                    <a href="#services"
-                        class="text-gray-600 hover:text-medical-blue transition duration-300 font-medium">Treatments</a>
-                    <a href="#success"
-                        class="text-gray-600 hover:text-medical-blue transition duration-300 font-medium">Success
-                        Stories</a>
-                </div>
+                        class="text-brand-navy hover:text-brand-gold font-medium tracking-wide transition">About</a>
+                    <a href="#treatments"
+                        class="text-brand-navy hover:text-brand-gold font-medium tracking-wide transition">Treatments</a>
 
-                <div class="hidden md:flex">
                     <a href="#contact"
-                        class="bg-medical-blue text-white px-6 py-2.5 rounded-full font-medium hover:bg-blue-800 transition duration-300 shadow-md">
+                        class="px-6 py-2 bg-brand-navy text-white hover:bg-brand-gold transition rounded-full font-serif italic tracking-wide shadow-lg">
                         Book Consultation
                     </a>
                 </div>
 
-                <div class="md:hidden flex items-center">
-                    <button id="mobile-menu-btn" class="text-gray-600 hover:text-medical-blue focus:outline-none">
-                        <i class="fas fa-bars text-2xl"></i>
+                <div class="md:hidden">
+                    <button class="text-brand-navy text-2xl">
+                        <i class="fa-solid fa-bars"></i>
                     </button>
                 </div>
-            </div>
-        </div>
-
-        <div id="mobile-menu" class="hidden md:hidden bg-white border-t">
-            <div class="px-4 pt-2 pb-6 space-y-2">
-                <a href="#" class="block py-2 text-gray-600 hover:text-medical-blue font-medium">Home</a>
-                <a href="#about" class="block py-2 text-gray-600 hover:text-medical-blue font-medium">About Dr.</a>
-                <a href="#services" class="block py-2 text-gray-600 hover:text-medical-blue font-medium">Treatments</a>
-                <a href="#contact"
-                    class="block mt-4 text-center bg-medical-blue text-white py-3 rounded-md font-medium">Book
-                    Consultation</a>
             </div>
         </div>
     </nav>
