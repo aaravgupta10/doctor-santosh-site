@@ -675,6 +675,93 @@
             menu.classList.toggle('hidden');
         });
     </script>
+    <style>
+        /* 1. The Starting State (Hidden & Pushed Down) */
+        .reveal-element {
+            opacity: 0;
+            transform: translateY(40px);
+            transition: all 1s ease-out;
+            /* Smooth 1-second float up */
+        }
+
+        /* 2. The Active State (Visible & In Place) */
+        .reveal-element.active {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        /* 3. Staggered Delays (So cards don't pop up all at once) */
+        .delay-100 {
+            transition-delay: 100ms;
+        }
+
+        .delay-200 {
+            transition-delay: 200ms;
+        }
+
+        .delay-300 {
+            transition-delay: 300ms;
+        }
+    </style>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+
+            // A. Define the "Observer" (The eye that watches scrolling)
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('active'); // Trigger animation
+                        observer.unobserve(entry.target);     // Only animate once
+                    }
+                });
+            }, { threshold: 0.1 }); // Trigger when 10% of the item is visible
+
+            // B. Select elements to animate automatically
+            // 1. Hero Text
+            const heroText = document.querySelector('#home .relative.z-10');
+            if (heroText) {
+                heroText.classList.add('reveal-element');
+                observer.observe(heroText);
+            }
+
+            // 2. Stats Section Columns
+            const stats = document.querySelectorAll('section.bg-medical-blue .grid > div');
+            stats.forEach((el, index) => {
+                el.classList.add('reveal-element');
+                el.style.transitionDelay = `${index * 200}ms`; // Stagger effect
+                observer.observe(el);
+            });
+
+            // 3. About Section (Image & Text sides)
+            const aboutSides = document.querySelectorAll('#about .flex > div');
+            aboutSides.forEach(el => {
+                el.classList.add('reveal-element');
+                observer.observe(el);
+            });
+
+            // 4. Treatment Cards (Cascading effect)
+            const treatmentCards = document.querySelectorAll('#treatments .grid > div');
+            treatmentCards.forEach((card, index) => {
+                card.classList.add('reveal-element');
+                // Add a small delay based on column position (0ms, 100ms, 200ms)
+                let delay = (index % 3) * 150;
+                card.style.transitionDelay = `${delay}ms`;
+                observer.observe(card);
+            });
+
+            // 5. Review Cards
+            const reviewCards = document.querySelectorAll('#reviews .grid > div');
+            reviewCards.forEach((card, index) => {
+                card.classList.add('reveal-element');
+                let delay = (index % 3) * 150;
+                card.style.transitionDelay = `${delay}ms`;
+                observer.observe(card);
+            });
+
+            // Note: We intentionally SKIPPED the #contact section so it stays solid.
+        });
+    </script>
 </body>
 
 </html>
