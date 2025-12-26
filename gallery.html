@@ -80,13 +80,15 @@
             <div id="mobile-menu"
                 class="hidden md:hidden mt-4 bg-white/95 backdrop-blur-sm rounded-xl shadow-xl p-4 absolute left-4 right-4 border border-gray-100">
                 <div class="flex flex-col space-y-4">
-                    <a href="#home" class="text-medical-blue font-medium hover:text-luxury-gold">Home</a>
-                    <a href="#about" class="text-medical-blue font-medium hover:text-luxury-gold">About</a>
-                    <a href="gallery.html" class="text-medical-blue font-medium hover:text-luxury-gold">Gallery</a>
-                    <a href="#treatments" class="text-medical-blue font-medium hover:text-luxury-gold">Treatments</a>
-                    <a href="#contact"
-                        class="text-center w-full py-3 bg-medical-blue text-white rounded-lg hover:bg-luxury-gold">Book
-                        Consultation</a>
+                    <a href="index.html" class="text-medical-blue font-medium hover:text-luxury-gold">Home</a>
+                    <a href="index.html#about" class="text-medical-blue font-medium hover:text-luxury-gold">About</a>
+                    <a href="gallery.html" class="text-luxury-gold font-bold">Gallery</a>
+                    <a href="index.html#treatments"
+                        class="text-medical-blue font-medium hover:text-luxury-gold">Treatments</a>
+                    <a href="index.html#contact"
+                        class="text-center w-full py-3 bg-medical-blue text-white rounded-lg hover:bg-luxury-gold">
+                        Book Consultation
+                    </a>
                 </div>
             </div>
         </div>
@@ -96,7 +98,7 @@
         <div class="max-w-7xl mx-auto px-6">
             <h1 class="font-serif text-4xl md:text-6xl font-bold text-white mb-4">Our Gallery</h1>
             <p class="text-white/80 text-lg font-light max-w-2xl mx-auto">
-                A glimpse into our world-class facilities, advanced technology, and the moments of joy we create.
+                Tap on any image to view it in full size.
             </p>
         </div>
     </section>
@@ -106,76 +108,112 @@
 
             <div id="gallery-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
 
-                <div class="group relative overflow-hidden rounded-xl shadow-md aspect-[4/3]">
+                <div class="group relative overflow-hidden rounded-xl shadow-md aspect-[4/3] cursor-pointer">
                     <img src="assets/images/gallery-1.jpg" alt="Clinic Photo"
                         class="w-full h-full object-cover transform group-hover:scale-110 transition duration-700">
-                    <div class="absolute inset-0 bg-black/20 group-hover:bg-black/0 transition duration-500"></div>
+                    <div class="absolute inset-0 bg-black/20 group-hover:bg-black/0 transition duration-500">
+                        <i
+                            class="fa-solid fa-expand text-white absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 opacity-0 group-hover:opacity-100 text-3xl drop-shadow-lg transition"></i>
+                    </div>
                 </div>
 
-                <div class="group relative overflow-hidden rounded-xl shadow-md aspect-[4/3]">
+                <div class="group relative overflow-hidden rounded-xl shadow-md aspect-[4/3] cursor-pointer">
                     <img src="assets/images/gallery-2.jpg" alt="Clinic Photo"
                         class="w-full h-full object-cover transform group-hover:scale-110 transition duration-700">
-                    <div class="absolute inset-0 bg-black/20 group-hover:bg-black/0 transition duration-500"></div>
+                    <div class="absolute inset-0 bg-black/20 group-hover:bg-black/0 transition duration-500">
+                        <i
+                            class="fa-solid fa-expand text-white absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 opacity-0 group-hover:opacity-100 text-3xl drop-shadow-lg transition"></i>
+                    </div>
                 </div>
 
-                <div class="group relative overflow-hidden rounded-xl shadow-md aspect-[4/3]">
+                <div class="group relative overflow-hidden rounded-xl shadow-md aspect-[4/3] cursor-pointer">
                     <img src="assets/images/gallery-3.jpg" alt="Clinic Photo"
                         class="w-full h-full object-cover transform group-hover:scale-110 transition duration-700">
-                    <div class="absolute inset-0 bg-black/20 group-hover:bg-black/0 transition duration-500"></div>
+                    <div class="absolute inset-0 bg-black/20 group-hover:bg-black/0 transition duration-500">
+                        <i
+                            class="fa-solid fa-expand text-white absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 opacity-0 group-hover:opacity-100 text-3xl drop-shadow-lg transition"></i>
+                    </div>
                 </div>
 
-                <div class="group relative overflow-hidden rounded-xl shadow-md aspect-[4/3]">
+                <div class="group relative overflow-hidden rounded-xl shadow-md aspect-[4/3] cursor-pointer">
                     <img src="assets/images/gallery-4.jpg" alt="Clinic Photo"
                         class="w-full h-full object-cover transform group-hover:scale-110 transition duration-700">
-                    <div class="absolute inset-0 bg-black/20 group-hover:bg-black/0 transition duration-500"></div>
+                    <div class="absolute inset-0 bg-black/20 group-hover:bg-black/0 transition duration-500">
+                        <i
+                            class="fa-solid fa-expand text-white absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 opacity-0 group-hover:opacity-100 text-3xl drop-shadow-lg transition"></i>
+                    </div>
                 </div>
 
-                <div class="group relative overflow-hidden rounded-xl shadow-md aspect-[4/3]">
+                <div class="group relative overflow-hidden rounded-xl shadow-md aspect-[4/3] cursor-pointer">
                     <img src="assets/images/gallery-5.jpg" alt="Clinic Photo"
                         class="w-full h-full object-cover transform group-hover:scale-110 transition duration-700">
-                    <div class="absolute inset-0 bg-black/20 group-hover:bg-black/0 transition duration-500"></div>
+                    <div class="absolute inset-0 bg-black/20 group-hover:bg-black/0 transition duration-500">
+                        <i
+                            class="fa-solid fa-expand text-white absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 opacity-0 group-hover:opacity-100 text-3xl drop-shadow-lg transition"></i>
+                    </div>
                 </div>
 
-                <div class="group relative overflow-hidden rounded-xl shadow-md aspect-[4/3]">
+                <div class="group relative overflow-hidden rounded-xl shadow-md aspect-[4/3] cursor-pointer">
                     <img src="assets/images/gallery-6.jpg" alt="Clinic Photo"
                         class="w-full h-full object-cover transform group-hover:scale-110 transition duration-700">
-                    <div class="absolute inset-0 bg-black/20 group-hover:bg-black/0 transition duration-500"></div>
+                    <div class="absolute inset-0 bg-black/20 group-hover:bg-black/0 transition duration-500">
+                        <i
+                            class="fa-solid fa-expand text-white absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 opacity-0 group-hover:opacity-100 text-3xl drop-shadow-lg transition"></i>
+                    </div>
                 </div>
 
-                <div class="group relative overflow-hidden rounded-xl shadow-md aspect-[4/3]">
+                <div class="group relative overflow-hidden rounded-xl shadow-md aspect-[4/3] cursor-pointer">
                     <img src="assets/images/gallery-7.jpg" alt="Clinic Photo"
                         class="w-full h-full object-cover transform group-hover:scale-110 transition duration-700">
-                    <div class="absolute inset-0 bg-black/20 group-hover:bg-black/0 transition duration-500"></div>
+                    <div class="absolute inset-0 bg-black/20 group-hover:bg-black/0 transition duration-500">
+                        <i
+                            class="fa-solid fa-expand text-white absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 opacity-0 group-hover:opacity-100 text-3xl drop-shadow-lg transition"></i>
+                    </div>
                 </div>
 
-                <div class="group relative overflow-hidden rounded-xl shadow-md aspect-[4/3]">
+                <div class="group relative overflow-hidden rounded-xl shadow-md aspect-[4/3] cursor-pointer">
                     <img src="assets/images/gallery-8.jpg" alt="Clinic Photo"
                         class="w-full h-full object-cover transform group-hover:scale-110 transition duration-700">
-                    <div class="absolute inset-0 bg-black/20 group-hover:bg-black/0 transition duration-500"></div>
+                    <div class="absolute inset-0 bg-black/20 group-hover:bg-black/0 transition duration-500">
+                        <i
+                            class="fa-solid fa-expand text-white absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 opacity-0 group-hover:opacity-100 text-3xl drop-shadow-lg transition"></i>
+                    </div>
                 </div>
 
-                <div class="group relative overflow-hidden rounded-xl shadow-md aspect-[4/3]">
+                <div class="group relative overflow-hidden rounded-xl shadow-md aspect-[4/3] cursor-pointer">
                     <img src="assets/images/gallery-9.jpg" alt="Clinic Photo"
                         class="w-full h-full object-cover transform group-hover:scale-110 transition duration-700">
-                    <div class="absolute inset-0 bg-black/20 group-hover:bg-black/0 transition duration-500"></div>
+                    <div class="absolute inset-0 bg-black/20 group-hover:bg-black/0 transition duration-500">
+                        <i
+                            class="fa-solid fa-expand text-white absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 opacity-0 group-hover:opacity-100 text-3xl drop-shadow-lg transition"></i>
+                    </div>
                 </div>
 
-                <div class="group relative overflow-hidden rounded-xl shadow-md aspect-[4/3]">
+                <div class="group relative overflow-hidden rounded-xl shadow-md aspect-[4/3] cursor-pointer">
                     <img src="assets/images/gallery-10.jpg" alt="Clinic Photo"
                         class="w-full h-full object-cover transform group-hover:scale-110 transition duration-700">
-                    <div class="absolute inset-0 bg-black/20 group-hover:bg-black/0 transition duration-500"></div>
+                    <div class="absolute inset-0 bg-black/20 group-hover:bg-black/0 transition duration-500">
+                        <i
+                            class="fa-solid fa-expand text-white absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 opacity-0 group-hover:opacity-100 text-3xl drop-shadow-lg transition"></i>
+                    </div>
                 </div>
 
-                <div class="group relative overflow-hidden rounded-xl shadow-md aspect-[4/3]">
+                <div class="group relative overflow-hidden rounded-xl shadow-md aspect-[4/3] cursor-pointer">
                     <img src="assets/images/gallery-11.jpg" alt="Clinic Photo"
                         class="w-full h-full object-cover transform group-hover:scale-110 transition duration-700">
-                    <div class="absolute inset-0 bg-black/20 group-hover:bg-black/0 transition duration-500"></div>
+                    <div class="absolute inset-0 bg-black/20 group-hover:bg-black/0 transition duration-500">
+                        <i
+                            class="fa-solid fa-expand text-white absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 opacity-0 group-hover:opacity-100 text-3xl drop-shadow-lg transition"></i>
+                    </div>
                 </div>
 
-                <div class="group relative overflow-hidden rounded-xl shadow-md aspect-[4/3]">
+                <div class="group relative overflow-hidden rounded-xl shadow-md aspect-[4/3] cursor-pointer">
                     <img src="assets/images/gallery-12.jpg" alt="Clinic Photo"
                         class="w-full h-full object-cover transform group-hover:scale-110 transition duration-700">
-                    <div class="absolute inset-0 bg-black/20 group-hover:bg-black/0 transition duration-500"></div>
+                    <div class="absolute inset-0 bg-black/20 group-hover:bg-black/0 transition duration-500">
+                        <i
+                            class="fa-solid fa-expand text-white absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 opacity-0 group-hover:opacity-100 text-3xl drop-shadow-lg transition"></i>
+                    </div>
                 </div>
 
             </div>
@@ -186,7 +224,7 @@
         <div class="max-w-7xl mx-auto px-6 lg:px-8 flex flex-col md:flex-row justify-between items-center gap-6">
 
             <div class="text-center md:text-left">
-                <a href="#home" class="inline-block">
+                <a href="index.html" class="inline-block">
                     <span class="font-serif text-2xl font-bold tracking-wide">
                         Dr. Santosh <span class="text-luxury-gold">Gupta</span>
                     </span>
@@ -196,11 +234,11 @@
             </div>
 
             <div class="flex space-x-6 text-sm text-gray-400 font-medium">
-                <a href="#home" class="hover:text-luxury-gold transition">Home</a>
-                <a href="#about" class="hover:text-luxury-gold transition">About</a>
+                <a href="index.html" class="hover:text-luxury-gold transition">Home</a>
+                <a href="index.html#about" class="hover:text-luxury-gold transition">About</a>
                 <a href="gallery.html" class="hover:text-luxury-gold transition">Gallery</a>
-                <a href="#treatments" class="hover:text-luxury-gold transition">Treatments</a>
-                <a href="#reviews" class="hover:text-luxury-gold transition">Reviews</a>
+                <a href="index.html#treatments" class="hover:text-luxury-gold transition">Treatments</a>
+                <a href="index.html#reviews" class="hover:text-luxury-gold transition">Reviews</a>
             </div>
 
             <div class="flex space-x-4">
@@ -228,6 +266,14 @@
         <i class="fa-brands fa-whatsapp text-3xl"></i>
     </a>
 
+    <div id="lightbox"
+        class="fixed inset-0 z-[60] bg-black/95 hidden items-center justify-center p-4 transition-opacity duration-300 opacity-0">
+        <button id="lightbox-close"
+            class="absolute top-6 right-6 text-white/80 hover:text-white text-5xl transition focus:outline-none">&times;</button>
+        <img id="lightbox-img" src="" alt="Full view"
+            class="max-w-full max-h-[90vh] rounded shadow-2xl transform scale-95 transition-transform duration-300 object-contain">
+    </div>
+
     <style>
         .reveal-element {
             opacity: 0;
@@ -253,7 +299,7 @@
         // Init AOS
         AOS.init({ duration: 1000, once: true, offset: 100 });
 
-        // Init Gallery Animations
+        // Init Gallery Animations & Lightbox
         document.addEventListener('DOMContentLoaded', () => {
             const observer = new IntersectionObserver((entries) => {
                 entries.forEach(entry => {
@@ -270,6 +316,53 @@
                 img.classList.add('reveal-element');
                 img.style.transitionDelay = `${(index % 3) * 150}ms`;
                 observer.observe(img);
+            });
+
+            // --- LIGHTBOX LOGIC ---
+            const lightbox = document.getElementById('lightbox');
+            const lightboxImg = document.getElementById('lightbox-img');
+            const closeBtn = document.getElementById('lightbox-close');
+
+            // Get all image containers in the grid
+            const imageContainers = document.querySelectorAll('#gallery-grid .group');
+
+            imageContainers.forEach(container => {
+                container.addEventListener('click', () => {
+                    const imgElement = container.querySelector('img');
+                    lightboxImg.src = imgElement.src; // Copy source to lightbox
+
+                    // Show Lightbox
+                    lightbox.classList.remove('hidden');
+                    lightbox.style.display = 'flex'; // Ensure flex centering
+
+                    // Small delay to allow fade-in animation
+                    setTimeout(() => {
+                        lightbox.classList.remove('opacity-0');
+                        lightboxImg.classList.remove('scale-95');
+                        lightboxImg.classList.add('scale-100');
+                    }, 10);
+                });
+            });
+
+            // Close Logic
+            const closeLightbox = () => {
+                lightbox.classList.add('opacity-0');
+                lightboxImg.classList.add('scale-95');
+                lightboxImg.classList.remove('scale-100');
+
+                setTimeout(() => {
+                    lightbox.classList.add('hidden');
+                    lightbox.style.display = 'none';
+                }, 300); // Wait for fade out
+            };
+
+            closeBtn.addEventListener('click', closeLightbox);
+
+            // Close if clicking outside the image (on the black background)
+            lightbox.addEventListener('click', (e) => {
+                if (e.target === lightbox) {
+                    closeLightbox();
+                }
             });
         });
     </script>
