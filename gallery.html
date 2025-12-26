@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Gallery | Dr. Santosh Gupta | Nova IVF</title>
+    <meta name="description"
+        content="View our world-class fertility clinic facilities, patient recovery rooms, and the advanced technology used by Dr. Santosh Gupta.">
+
+    <link rel="icon" href="assets/images/Cover.jpg" type="image/jpeg">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;600&family=Playfair+Display:ital,wght@0,400;0,600;1,400&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'medical-blue': '#2C5F78',
+                        'soft-teal': '#E0F2F1',
+                        'luxury-gold': '#D4AF37',
+                        'dark-text': '#333333',
+                        'light-text': '#666666',
+                    },
+                    fontFamily: {
+                        'serif': ['"Playfair Display"', 'serif'],
+                        'sans': ['"Lato"', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+
+<body class="font-sans text-dark-text bg-white antialiased">
+
+    <nav class="absolute top-0 left-0 w-full z-50 py-6 bg-white/90 backdrop-blur-sm border-b border-gray-100">
+        <div class="max-w-7xl mx-auto px-6 lg:px-8">
+            <div class="flex justify-between items-center">
+
+                <div class="flex items-center space-x-2">
+                    <i class="fa-solid fa-user-doctor text-luxury-gold text-2xl"></i>
+                    <a href="index.html" class="font-serif text-2xl font-bold tracking-wide text-medical-blue">
+                        Dr. Santosh <span class="text-luxury-gold">Gupta</span>
+                    </a>
+                </div>
+
+                <div class="hidden md:flex space-x-8 items-center">
+                    <a href="index.html"
+                        class="text-medical-blue hover:text-luxury-gold font-medium tracking-wide transition">Home</a>
+                    <a href="index.html#about"
+                        class="text-medical-blue hover:text-luxury-gold font-medium tracking-wide transition">About</a>
+                    <a href="gallery.html" class="text-luxury-gold font-bold tracking-wide transition">Gallery</a>
+                    <a href="index.html#treatments"
+                        class="text-medical-blue hover:text-luxury-gold font-medium tracking-wide transition">Treatments</a>
+
+                    <a href="index.html#contact"
+                        class="px-6 py-2 bg-medical-blue text-white hover:bg-luxury-gold transition rounded-full font-bold uppercase text-xs tracking-widest shadow-lg">
+                        Book Consultation
+                    </a>
+                </div>
+
+                <div class="md:hidden">
+                    <button id="mobile-menu-btn" class="text-medical-blue text-2xl focus:outline-none">
+                        <i class="fa-solid fa-bars"></i>
+                    </button>
+                </div>
+            </div>
+
+            <div id="mobile-menu"
+                class="hidden md:hidden mt-4 bg-white/95 backdrop-blur-sm rounded-xl shadow-xl p-4 absolute left-4 right-4 border border-gray-100">
+                <div class="flex flex-col space-y-4">
+                    <a href="index.html" class="text-medical-blue font-medium hover:text-luxury-gold">Home</a>
+                    <a href="index.html#about" class="text-medical-blue font-medium hover:text-luxury-gold">About</a>
+                    <a href="gallery.html" class="text-luxury-gold font-bold">Gallery</a>
+                    <a href="index.html#treatments"
+                        class="text-medical-blue font-medium hover:text-luxury-gold">Treatments</a>
+                    <a href="index.html#contact"
+                        class="text-center w-full py-3 bg-medical-blue text-white rounded-lg hover:bg-luxury-gold">
+                        Book Consultation
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <section class="bg-medical-blue pt-40 pb-16 text-center">
+        <div class="max-w-7xl mx-auto px-6">
+            <h1 class="font-serif text-4xl md:text-6xl font-bold text-white mb-4">Our Gallery</h1>
+            <p class="text-white/80 text-lg font-light max-w-2xl mx-auto">
+                A glimpse into our world-class facilities, advanced technology, and the moments of joy we create.
+            </p>
+        </div>
+    </section>
+
+    <section class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-6 lg:px-8">
+
+            <div id="gallery-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+
+                <div class="group relative overflow-hidden rounded-xl shadow-md aspect-[4/3]">
+                    <img src="assets/images/gallery-1.jpg" alt="Clinic Photo"
+                        class="w-full h-full object-cover transform group-hover:scale-110 transition duration-700">
+                    <div class="absolute inset-0 bg-black/20 group-hover:bg-black/0 transition duration-500"></div>
+                </div>
+
+                <div class="group relative overflow-hidden rounded-xl shadow-md aspect-[4/3]">
+                    <img src="assets/images/gallery-2.jpg" alt="Clinic Photo"
+                        class="w-full h-full object-cover transform group-hover:scale-110 transition duration-700">
+                    <div class="absolute inset-0 bg-black/20 group-hover:bg-black/0 transition duration-500"></div>
+                </div>
+
+                <div class="group relative overflow-hidden rounded-xl shadow-md aspect-[4/3]">
+                    <img src="assets/images/gallery-3.jpg" alt="Clinic Photo"
+                        class="w-full h-full object-cover transform group-hover:scale-110 transition duration-700">
+                    <div class="absolute inset-0 bg-black/20 group-hover:bg-black/0 transition duration-500"></div>
+                </div>
+
+                <div class="group relative overflow-hidden rounded-xl shadow-md aspect-[4/3]">
+                    <img src="assets/images/gallery-4.jpg" alt="Clinic Photo"
+                        class="w-full h-full object-cover transform group-hover:scale-110 transition duration-700">
+                    <div class="absolute inset-0 bg-black/20 group-hover:bg-black/0 transition duration-500"></div>
+                </div>
+
+                <div class="group relative overflow-hidden rounded-xl shadow-md aspect-[4/3]">
+                    <img src="assets/images/gallery-5.jpg" alt="Clinic Photo"
+                        class="w-full h-full object-cover transform group-hover:scale-110 transition duration-700">
+                    <div class="absolute inset-0 bg-black/20 group-hover:bg-black/0 transition duration-500"></div>
+                </div>
+
+                <div class="group relative overflow-hidden rounded-xl shadow-md aspect-[4/3]">
+                    <img src="assets/images/gallery-6.jpg" alt="Clinic Photo"
+                        class="w-full h-full object-cover transform group-hover:scale-110 transition duration-700">
+                    <div class="absolute inset-0 bg-black/20 group-hover:bg-black/0 transition duration-500"></div>
+                </div>
+
+                <div class="group relative overflow-hidden rounded-xl shadow-md aspect-[4/3]">
+                    <img src="assets/images/gallery-7.jpg" alt="Clinic Photo"
+                        class="w-full h-full object-cover transform group-hover:scale-110 transition duration-700">
+                    <div class="absolute inset-0 bg-black/20 group-hover:bg-black/0 transition duration-500"></div>
+                </div>
+
+                <div class="group relative overflow-hidden rounded-xl shadow-md aspect-[4/3]">
+                    <img src="assets/images/gallery-8.jpg" alt="Clinic Photo"
+                        class="w-full h-full object-cover transform group-hover:scale-110 transition duration-700">
+                    <div class="absolute inset-0 bg-black/20 group-hover:bg-black/0 transition duration-500"></div>
+                </div>
+
+                <div class="group relative overflow-hidden rounded-xl shadow-md aspect-[4/3]">
+                    <img src="assets/images/gallery-9.jpg" alt="Clinic Photo"
+                        class="w-full h-full object-cover transform group-hover:scale-110 transition duration-700">
+                    <div class="absolute inset-0 bg-black/20 group-hover:bg-black/0 transition duration-500"></div>
+                </div>
+
+                <div class="group relative overflow-hidden rounded-xl shadow-md aspect-[4/3]">
+                    <img src="assets/images/gallery-10.jpg" alt="Clinic Photo"
+                        class="w-full h-full object-cover transform group-hover:scale-110 transition duration-700">
+                    <div class="absolute inset-0 bg-black/20 group-hover:bg-black/0 transition duration-500"></div>
+                </div>
+
+                <div class="group relative overflow-hidden rounded-xl shadow-md aspect-[4/3]">
+                    <img src="assets/images/gallery-11.jpg" alt="Clinic Photo"
+                        class="w-full h-full object-cover transform group-hover:scale-110 transition duration-700">
+                    <div class="absolute inset-0 bg-black/20 group-hover:bg-black/0 transition duration-500"></div>
+                </div>
+
+                <div class="group relative overflow-hidden rounded-xl shadow-md aspect-[4/3]">
+                    <img src="assets/images/gallery-12.jpg" alt="Clinic Photo"
+                        class="w-full h-full object-cover transform group-hover:scale-110 transition duration-700">
+                    <div class="absolute inset-0 bg-black/20 group-hover:bg-black/0 transition duration-500"></div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="bg-medical-blue pt-32 pb-16 text-center">
+        <div class="max-w-7xl mx-auto px-6">
+            <h1 class="font-serif text-4xl md:text-6xl font-bold text-white mb-4">Our Gallery</h1>
+            <p class="text-white/80 text-lg font-light max-w-2xl mx-auto">
+                A glimpse into our world-class facilities and the moments of joy we create every day.
+            </p>
+        </div>
+    </section>
+
+    <section class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-6 lg:px-8">
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+                <div class="group relative overflow-hidden rounded-2xl shadow-lg aspect-[4/3]">
+                    <img src="assets/images/gallery-1.jpg" alt="Clinic Facility"
+                        class="w-full h-full object-cover transform group-hover:scale-110 transition duration-700">
+                    <div class="absolute inset-0 bg-black/20 group-hover:bg-black/0 transition duration-500"></div>
+                </div>
+
+                <div class="group relative overflow-hidden rounded-2xl shadow-lg aspect-[4/3]">
+                    <img src="assets/images/gallery-2.jpg" alt="Consultation Room"
+                        class="w-full h-full object-cover transform group-hover:scale-110 transition duration-700">
+                    <div class="absolute inset-0 bg-black/20 group-hover:bg-black/0 transition duration-500"></div>
+                </div>
+
+                <div class="group relative overflow-hidden rounded-2xl shadow-lg aspect-[4/3]">
+                    <img src="assets/images/gallery-3.jpg" alt="Laboratory"
+                        class="w-full h-full object-cover transform group-hover:scale-110 transition duration-700">
+                    <div class="absolute inset-0 bg-black/20 group-hover:bg-black/0 transition duration-500"></div>
+                </div>
+
+                <div class="group relative overflow-hidden rounded-2xl shadow-lg aspect-[4/3]">
+                    <img src="assets/images/gallery-4.jpg" alt="Happy Patient"
+                        class="w-full h-full object-cover transform group-hover:scale-110 transition duration-700">
+                    <div class="absolute inset-0 bg-black/20 group-hover:bg-black/0 transition duration-500"></div>
+                </div>
+
+                <div class="group relative overflow-hidden rounded-2xl shadow-lg aspect-[4/3]">
+                    <img src="assets/images/gallery-5.jpg" alt="Dr. Santosh Gupta"
+                        class="w-full h-full object-cover transform group-hover:scale-110 transition duration-700">
+                    <div class="absolute inset-0 bg-black/20 group-hover:bg-black/0 transition duration-500"></div>
+                </div>
+
+                <div class="group relative overflow-hidden rounded-2xl shadow-lg aspect-[4/3]">
+                    <img src="assets/images/gallery-6.jpg" alt="Recovery Room"
+                        class="w-full h-full object-cover transform group-hover:scale-110 transition duration-700">
+                    <div class="absolute inset-0 bg-black/20 group-hover:bg-black/0 transition duration-500"></div>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <footer class="bg-gray-900 text-white py-12 border-t border-gray-800">
+        <div class="max-w-7xl mx-auto px-6 lg:px-8 flex flex-col md:flex-row justify-between items-center gap-6">
+
+            <div class="text-center md:text-left">
+                <a href="index.html" class="inline-block">
+                    <span class="font-serif text-2xl font-bold tracking-wide">
+                        Dr. Santosh <span class="text-luxury-gold">Gupta</span>
+                    </span>
+                </a>
+                <p class="text-gray-500 text-sm mt-2">© 2025 Dr. Santosh Gupta Fertility.</p>
+                <p class="text-gray-600 text-xs mt-1">Practicing at Nova IVF Koramangala.</p>
+            </div>
+
+            <div class="flex space-x-6 text-sm text-gray-400 font-medium">
+                <a href="index.html" class="hover:text-luxury-gold transition">Home</a>
+                <a href="index.html#about" class="hover:text-luxury-gold transition">About</a>
+                <a href="index.html#treatments" class="hover:text-luxury-gold transition">Treatments</a>
+                <a href="index.html#reviews" class="hover:text-luxury-gold transition">Reviews</a>
+            </div>
+
+            <div class="flex space-x-4">
+                <a href="https://www.facebook.com/share/1DD9aXkwjm/?mibextid=wwXIfr" target="_blank"
+                    class="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center text-gray-400 hover:bg-luxury-gold hover:text-white transition duration-300">
+                    <i class="fa-brands fa-facebook-f"></i>
+                </a>
+
+                <a href="https://www.instagram.com/drsantosh4?igsh=dGR0MWRxYnd6cjc4&utm_source=qr" target="_blank"
+                    class="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center text-gray-400 hover:bg-luxury-gold hover:text-white transition duration-300">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+
+                <a href="https://www.linkedin.com/in/santosh-gupta-ab594523b/?originalSubdomain=in" target="_blank"
+                    class="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center text-gray-400 hover:bg-luxury-gold hover:text-white transition duration-300">
+                    <i class="fa-brands fa-linkedin-in"></i>
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <a href="https://wa.me/919731106520?text=Hello%20Dr.%20Santosh,%20I%20visited%20your%20website%20and%20have%20a%20query."
+        target="_blank"
+        class="fixed bottom-6 right-6 bg-green-500 text-white w-14 h-14 rounded-full flex items-center justify-center shadow-lg hover:bg-green-600 transition-all duration-300 z-50 animate-bounce">
+        <i class="fa-brands fa-whatsapp text-3xl"></i>
+    </a>
+
+    <style>
+        .reveal-element {
+            opacity: 0;
+            transform: translateY(40px);
+            transition: all 1s ease-out;
+        }
+
+        .reveal-element.active {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    </style>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        // Init Mobile Menu
+        const btn = document.getElementById('mobile-menu-btn');
+        const menu = document.getElementById('mobile-menu');
+        btn.addEventListener('click', () => {
+            menu.classList.toggle('hidden');
+        });
+
+        // Init AOS
+        AOS.init({ duration: 1000, once: true, offset: 100 });
+
+        // Init Gallery Animations
+        document.addEventListener('DOMContentLoaded', () => {
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('active');
+                        observer.unobserve(entry.target);
+                    }
+                });
+            }, { threshold: 0.1 });
+
+            // Apply animation to all gallery images
+            const galleryImages = document.querySelectorAll('#gallery-grid > div');
+            galleryImages.forEach((img, index) => {
+                img.classList.add('reveal-element');
+                // Staggered delay for cool effect (0ms, 100ms, 200ms...)
+                img.style.transitionDelay = `${(index % 3) * 150}ms`;
+                observer.observe(img);
+            });
+        });
+    </script>
+</body>
+
+</html>
