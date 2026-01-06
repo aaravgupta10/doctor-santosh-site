@@ -2,3 +2,4 @@ This page is solely for listing ideas and areas that require imporvement:
 
 Moidfy the instagram link
 Add an option in the website to drop reviews
+Add FAQs
