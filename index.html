@@ -101,6 +101,35 @@
     "description": "Senior IVF Specialist in Koramangala & Bannerghatta. Dr. Santosh Gupta has 25+ years of experience in Infertility, PCOS, and High-Risk Pregnancy."
     }
     </script>
+
+    <script type="application/ld+json">
+    {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [{
+        "@type": "Question",
+        "name": "Where does Dr. Santosh Gupta consult in Bengaluru?",
+        "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Dr. Santosh Gupta consults at Nova IVF Fertility in Koramangala and Bannerghatta Road, Bengaluru."
+        }
+    }, {
+        "@type": "Question",
+        "name": "What is the success rate of IVF treatments?",
+        "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Success rates vary by age, but Dr. Santosh utilizes advanced technologies like ICSI and PGT-A to maximize outcomes for complex cases."
+        }
+    }, {
+        "@type": "Question",
+        "name": "Do you treat PCOS and Male Infertility?",
+        "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes, Dr. Santosh Gupta specializes in treating complex infertility cases including severe PCOS, Endometriosis, and Male Infertility."
+        }
+    }]
+    }
+    </script>
 </head>
 
 <body class="font-sans text-dark-text bg-white antialiased">
@@ -692,6 +721,85 @@
         </div>
     </section>
 
+    <section id="faq" class="py-20 bg-soft-teal/20">
+        <div class="max-w-4xl mx-auto px-6 lg:px-8">
+
+            <div class="text-center mb-12">
+                <p class="text-luxury-gold font-bold tracking-widest uppercase text-sm mb-3">Common Questions</p>
+                <h2 class="font-serif text-3xl md:text-5xl font-bold text-medical-blue leading-tight">
+                    Your Questions, Answered.
+                </h2>
+            </div>
+
+            <div class="space-y-4">
+
+                <div class="bg-white rounded-xl shadow-md overflow-hidden border border-gray-100">
+                    <button
+                        class="faq-btn w-full px-6 py-5 text-left flex justify-between items-center focus:outline-none">
+                        <span class="font-serif text-lg md:text-xl text-medical-blue font-bold">Where does Dr. Santosh
+                            Gupta consult in Bengaluru?</span>
+                        <i class="fa-solid fa-plus text-luxury-gold transition-transform duration-300"></i>
+                    </button>
+                    <div class="faq-content hidden px-6 pb-6 text-gray-600 leading-relaxed">
+                        Dr. Santosh Gupta is a Senior Consultant at Nova IVF Fertility. She is available at two prime
+                        locations:
+                        <strong>Koramangala</strong> (near Sony World Signal) and <strong>Bannerghatta Road</strong>
+                        (near Hulimavu Gate).
+                        Please call +91 80 4938 8781 to confirm her schedule for your preferred branch.
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-xl shadow-md overflow-hidden border border-gray-100">
+                    <button
+                        class="faq-btn w-full px-6 py-5 text-left flex justify-between items-center focus:outline-none">
+                        <span class="font-serif text-lg md:text-xl text-medical-blue font-bold">What is the success rate
+                            of IVF treatments here?</span>
+                        <i class="fa-solid fa-plus text-luxury-gold transition-transform duration-300"></i>
+                    </button>
+                    <div class="faq-content hidden px-6 pb-6 text-gray-600 leading-relaxed">
+                        Success rates depend on factors like age and medical history. However, with advanced
+                        technologies like
+                        <strong>ICSI, Blastocyst Culture, and PGT-A</strong> available at our Koramangala & Bannerghatta
+                        centers,
+                        we consistently achieve pregnancy rates that meet or exceed global standards.
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-xl shadow-md overflow-hidden border border-gray-100">
+                    <button
+                        class="faq-btn w-full px-6 py-5 text-left flex justify-between items-center focus:outline-none">
+                        <span class="font-serif text-lg md:text-xl text-medical-blue font-bold">Do you treat complex
+                            cases like PCOS or Male Infertility?</span>
+                        <i class="fa-solid fa-plus text-luxury-gold transition-transform duration-300"></i>
+                    </button>
+                    <div class="faq-content hidden px-6 pb-6 text-gray-600 leading-relaxed">
+                        Yes. Dr. Santosh specializes in "High-Risk" fertility cases. This includes Severe PCOS,
+                        Endometriosis,
+                        Recurrent Implantation Failure, and Male Factor Infertility (Low Sperm Count/Motility). We use
+                        tailored protocols
+                        rather than a "one-size-fits-all" approach.
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-xl shadow-md overflow-hidden border border-gray-100">
+                    <button
+                        class="faq-btn w-full px-6 py-5 text-left flex justify-between items-center focus:outline-none">
+                        <span class="font-serif text-lg md:text-xl text-medical-blue font-bold">How do I book a
+                            consultation?</span>
+                        <i class="fa-solid fa-plus text-luxury-gold transition-transform duration-300"></i>
+                    </button>
+                    <div class="faq-content hidden px-6 pb-6 text-gray-600 leading-relaxed">
+                        You can book an appointment by filling out the form below, clicking the WhatsApp button on this
+                        screen,
+                        or calling us directly. We recommend booking 2-3 days in advance to ensure you get a slot with
+                        Dr. Santosh specifically.
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
     <section id="contact" class="py-20 bg-medical-blue text-white relative">
         <div class="container mx-auto px-4">
             <div class="flex flex-wrap">
@@ -941,6 +1049,27 @@
             });
 
             // Note: We intentionally SKIPPED the #contact section so it stays solid.
+        });
+    </script>
+    <script>
+        // FAQ Accordion Logic
+        document.querySelectorAll('.faq-btn').forEach(button => {
+            button.addEventListener('click', () => {
+                const content = button.nextElementSibling;
+                const icon = button.querySelector('i');
+
+                // Toggle the content
+                content.classList.toggle('hidden');
+
+                // Rotate the icon
+                if (content.classList.contains('hidden')) {
+                    icon.classList.remove('rotate-45'); // Back to plus
+                    icon.classList.replace('fa-minus', 'fa-plus');
+                } else {
+                    icon.classList.add('rotate-45'); // X shape (optional style) or just swap icon
+                    icon.classList.replace('fa-plus', 'fa-minus');
+                }
+            });
         });
     </script>
 </body>
