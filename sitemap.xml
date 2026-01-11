@@ -1,18 +1,76 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+        
    <url>
       <loc>https://www.drsantoshguptaivf.com/</loc>
       <lastmod>2025-01-07</lastmod>
       <priority>1.00</priority>
+      <image:image>
+         <image:loc>https://www.drsantoshguptaivf.com/assets/images/Cover2.jpg</image:loc>
+         <image:title>Dr. Santosh Gupta - Senior IVF Specialist Bengaluru</image:title>
+      </image:image>
    </url>
+
    <url>
       <loc>https://www.drsantoshguptaivf.com/index.html</loc>
       <lastmod>2025-01-07</lastmod>
       <priority>0.80</priority>
    </url>
+
    <url>
       <loc>https://www.drsantoshguptaivf.com/gallery.html</loc>
       <lastmod>2025-01-07</lastmod>
       <priority>0.80</priority>
+      
+      <image:image>
+         <image:loc>https://www.drsantoshguptaivf.com/assets/images/gallery-1.jpg</image:loc>
+         <image:title>Keynote speech on IVF success rates in Koramangala</image:title>
+      </image:image>
+      <image:image>
+         <image:loc>https://www.drsantoshguptaivf.com/assets/images/gallery-2.jpg</image:loc>
+         <image:title>Dr. Santosh Gupta addressing ISAR fertility conference</image:title>
+      </image:image>
+      <image:image>
+         <image:loc>https://www.drsantoshguptaivf.com/assets/images/gallery-3.jpg</image:loc>
+         <image:title>Presentation on high-risk pregnancy management</image:title>
+      </image:image>
+      <image:image>
+         <image:loc>https://www.drsantoshguptaivf.com/assets/images/gallery-4.jpg</image:loc>
+         <image:title>Expert panel discussion on Male Infertility solutions</image:title>
+      </image:image>
+      <image:image>
+         <image:loc>https://www.drsantoshguptaivf.com/assets/images/gallery-5.jpg</image:loc>
+         <image:title>Seminar on advanced IUI and ICSI protocols</image:title>
+      </image:image>
+      <image:image>
+         <image:loc>https://www.drsantoshguptaivf.com/assets/images/gallery-6.jpg</image:loc>
+         <image:title>Dr. Santosh Gupta teaching future fertility specialists</image:title>
+      </image:image>
+
+      <image:image>
+         <image:loc>https://www.drsantoshguptaivf.com/assets/images/gallery-7.jpg</image:loc>
+         <image:title>Award for Excellence in Reproductive Medicine</image:title>
+      </image:image>
+      <image:image>
+         <image:loc>https://www.drsantoshguptaivf.com/assets/images/gallery-8.jpg</image:loc>
+         <image:title>Best IVF Specialist Award Ceremony Bengaluru</image:title>
+      </image:image>
+      <image:image>
+         <image:loc>https://www.drsantoshguptaivf.com/assets/images/gallery-9.jpg</image:loc>
+         <image:title>Felicitation for 25 years of service in Gynecology</image:title>
+      </image:image>
+      <image:image>
+         <image:loc>https://www.drsantoshguptaivf.com/assets/images/gallery-10.jpg</image:loc>
+         <image:title>Recognition from Indian Fertility Society</image:title>
+      </image:image>
+      <image:image>
+         <image:loc>https://www.drsantoshguptaivf.com/assets/images/gallery-11.jpg</image:loc>
+         <image:title>Top Fertility Doctor Award Reception</image:title>
+      </image:image>
+      <image:image>
+         <image:loc>https://www.drsantoshguptaivf.com/assets/images/gallery-12.jpg</image:loc>
+         <image:title>Dr. Santosh Gupta interview on Newsprime channel</image:title>
+      </image:image>
    </url>
 </urlset>
