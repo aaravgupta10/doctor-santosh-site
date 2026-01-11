@@ -1005,6 +1005,7 @@
             }, { threshold: 0.1 }); // Trigger when 10% of the item is visible
 
             // B. Select elements to animate automatically
+
             // 1. Hero Text
             const heroText = document.querySelector('#home .relative.z-10');
             if (heroText) {
@@ -1020,30 +1021,60 @@
                 observer.observe(el);
             });
 
-            // 3. About Section (Image & Text sides)
+            // 3. YouTube/Podcast Section (NEW)
+            // We find the section by looking for the iframe (video)
+            const videoFrame = document.querySelector('iframe');
+            if (videoFrame) {
+                // Find the container holding the text and the video
+                const podcastContainer = videoFrame.closest('.flex');
+                if (podcastContainer) {
+                    // Animate both the Text side and the Video side
+                    Array.from(podcastContainer.children).forEach(el => {
+                        el.classList.add('reveal-element');
+                        observer.observe(el);
+                    });
+                }
+            }
+
+            // 4. About Section (Image & Text sides)
             const aboutSides = document.querySelectorAll('#about .flex > div');
             aboutSides.forEach(el => {
                 el.classList.add('reveal-element');
                 observer.observe(el);
             });
 
-            // 4. Treatment Cards (Cascading effect)
+            // 5. Treatment Cards (Cascading effect)
             const treatmentCards = document.querySelectorAll('#treatments .grid > div');
             treatmentCards.forEach((card, index) => {
                 card.classList.add('reveal-element');
-                // Add a small delay based on column position (0ms, 100ms, 200ms)
+                // Add a small delay based on column position
                 let delay = (index % 3) * 150;
                 card.style.transitionDelay = `${delay}ms`;
                 observer.observe(card);
             });
 
-            // 5. Review Cards
+            // 6. Review Cards
             const reviewCards = document.querySelectorAll('#reviews .grid > div');
             reviewCards.forEach((card, index) => {
                 card.classList.add('reveal-element');
                 let delay = (index % 3) * 150;
                 card.style.transitionDelay = `${delay}ms`;
                 observer.observe(card);
+            });
+
+            // 7. FAQ Section (NEW)
+            const faqHeader = document.querySelector('#faq .text-center');
+            if (faqHeader) {
+                faqHeader.classList.add('reveal-element');
+                observer.observe(faqHeader);
+            }
+
+            // Animate each question one after another
+            const faqQuestions = document.querySelectorAll('#faq .space-y-4 > div');
+            faqQuestions.forEach((el, index) => {
+                el.classList.add('reveal-element');
+                el.style.transitionDelay = `${index * 100}ms`; // Fast ripple effect
+                observer.observe(el);
             });
 
             // Note: We intentionally SKIPPED the #contact section so it stays solid.
