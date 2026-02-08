@@ -44,7 +44,7 @@
 
 <body class="font-sans text-dark-text bg-white antialiased">
 
-    <nav class="absolute top-0 left-0 w-full z-50 py-6">
+    <nav class="absolute top-0 left-0 w-full z-50 py-6 bg-white/90 backdrop-blur-sm border-b border-gray-100">
         <div class="max-w-7xl mx-auto px-6 lg:px-8">
             <div class="flex justify-between items-center">
 
@@ -98,33 +98,16 @@
         </div>
     </nav>
 
-    <header id="ivf-home" class="relative w-full min-h-[70vh] flex items-center justify-center bg-white">
-
-        <div class="absolute inset-0 z-0 overflow-hidden">
-            <img src="assets/images/Cover2.jpg" alt="IVF Treatment Dr Santosh Gupta"
-                class="w-full h-full object-cover object-[center_25%]">
-
-            <div class="absolute inset-0 bg-gradient-to-b from-white/90 via-white/50 to-white">
-            </div>
-        </div>
-
-        <div class="relative z-10 max-w-5xl mx-auto px-6 lg:px-8 w-full pt-20 text-center reveal-element">
+    <section class="bg-medical-blue pt-40 pb-16 text-center">
+        <div class="max-w-7xl mx-auto px-6">
             <p class="text-luxury-gold font-bold tracking-widest uppercase text-sm mb-4">Fertility Treatments</p>
-            <h1 class="font-serif text-4xl md:text-6xl font-bold text-medical-blue leading-tight mb-6">
-                In Vitro Fertilization <span class="text-luxury-gold">(IVF)</span>
-            </h1>
-            <p class="text-lg md:text-xl text-dark-text font-light leading-relaxed max-w-2xl mx-auto mb-8">
+            <h1 class="font-serif text-4xl md:text-6xl font-bold text-white mb-4">In Vitro Fertilization (IVF)</h1>
+            <p class="text-white/80 text-lg font-light max-w-2xl mx-auto">
                 Turning hope into reality. Specialized IVF protocols for complex cases with high success rates in
                 Koramangala & Bannerghatta.
             </p>
-            <div class="flex justify-center gap-4">
-                <a href="#booking"
-                    class="px-8 py-3 bg-medical-blue text-white rounded-full font-bold uppercase tracking-wider hover:bg-luxury-gold transition shadow-lg text-sm">
-                    Book Consultation
-                </a>
-            </div>
         </div>
-    </header>
+    </section>
 
     <section class="py-16 bg-white">
         <div class="max-w-7xl mx-auto px-6 lg:px-8">
@@ -335,14 +318,12 @@
 
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
-        // Init Mobile Menu
         const btn = document.getElementById('mobile-menu-btn');
         const menu = document.getElementById('mobile-menu');
         btn.addEventListener('click', () => {
             menu.classList.toggle('hidden');
         });
 
-        // Init Animation
         document.addEventListener('DOMContentLoaded', () => {
             const observer = new IntersectionObserver((entries) => {
                 entries.forEach(entry => {
