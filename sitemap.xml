@@ -4,7 +4,7 @@
         
    <url>
       <loc>https://www.drsantoshguptaivf.com/</loc>
-      <lastmod>2025-01-07</lastmod>
+      <lastmod>2026-02-09</lastmod>
       <priority>1.00</priority>
       <image:image>
          <image:loc>https://www.drsantoshguptaivf.com/assets/images/Cover2.jpg</image:loc>
@@ -14,15 +14,14 @@
 
    <url>
       <loc>https://www.drsantoshguptaivf.com/index.html</loc>
-      <lastmod>2025-01-07</lastmod>
+      <lastmod>2026-02-09</lastmod>
       <priority>0.80</priority>
    </url>
 
    <url>
       <loc>https://www.drsantoshguptaivf.com/gallery.html</loc>
-      <lastmod>2025-01-07</lastmod>
+      <lastmod>2026-02-09</lastmod>
       <priority>0.80</priority>
-      
       <image:image>
          <image:loc>https://www.drsantoshguptaivf.com/assets/images/gallery-1.jpg</image:loc>
          <image:title>Keynote speech on IVF success rates in Koramangala</image:title>
@@ -47,7 +46,6 @@
          <image:loc>https://www.drsantoshguptaivf.com/assets/images/gallery-6.jpg</image:loc>
          <image:title>Dr. Santosh Gupta teaching future fertility specialists</image:title>
       </image:image>
-
       <image:image>
          <image:loc>https://www.drsantoshguptaivf.com/assets/images/gallery-7.jpg</image:loc>
          <image:title>Award for Excellence in Reproductive Medicine</image:title>
@@ -73,4 +71,47 @@
          <image:title>Dr. Santosh Gupta interview on Newsprime channel</image:title>
       </image:image>
    </url>
+
+   <url>
+      <loc>https://www.drsantoshguptaivf.com/ivf-treatment.html</loc>
+      <lastmod>2026-02-09</lastmod>
+      <priority>0.90</priority>
+   </url>
+
+   <url>
+      <loc>https://www.drsantoshguptaivf.com/iui-treatment.html</loc>
+      <lastmod>2026-02-09</lastmod>
+      <priority>0.90</priority>
+   </url>
+
+   <url>
+      <loc>https://www.drsantoshguptaivf.com/icsi-treatment.html</loc>
+      <lastmod>2026-02-09</lastmod>
+      <priority>0.90</priority>
+   </url>
+
+   <url>
+      <loc>https://www.drsantoshguptaivf.com/male-infertility.html</loc>
+      <lastmod>2026-02-09</lastmod>
+      <priority>0.80</priority>
+   </url>
+
+   <url>
+      <loc>https://www.drsantoshguptaivf.com/recurrent-pregnancy-loss.html</loc>
+      <lastmod>2026-02-09</lastmod>
+      <priority>0.80</priority>
+   </url>
+
+   <url>
+      <loc>https://www.drsantoshguptaivf.com/laparoscopy-hysteroscopy.html</loc>
+      <lastmod>2026-02-09</lastmod>
+      <priority>0.80</priority>
+   </url>
+
+   <url>
+      <loc>https://www.drsantoshguptaivf.com/ovulation-calculator.html</loc>
+      <lastmod>2026-02-09</lastmod>
+      <priority>0.85</priority>
+   </url>
+
 </urlset>
