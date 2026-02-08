@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Ovulation Calculator | Dr. Santosh Gupta | Fertility Specialist</title>
+    <meta name="description"
+        content="Free Ovulation Calculator by Dr. Santosh Gupta. Track your most fertile days and increase your chances of conception.">
+
+    <link rel="icon" href="assets/images/favicon_circle.png" type="image/png">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;600&family=Playfair+Display:ital,wght@0,400;0,600;1,400&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'medical-blue': '#2C5F78',
+                        'soft-teal': '#E0F2F1',
+                        'luxury-gold': '#D4AF37',
+                        'dark-text': '#333333',
+                        'light-text': '#666666',
+                    },
+                    fontFamily: {
+                        'serif': ['"Playfair Display"', 'serif'],
+                        'sans': ['"Lato"', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+
+<body class="font-sans text-dark-text bg-white antialiased">
+
+    <nav class="absolute top-0 left-0 w-full z-50 py-6 bg-white/90 backdrop-blur-sm border-b border-gray-100">
+        <div class="max-w-7xl mx-auto px-6 lg:px-8">
+            <div class="flex justify-between items-center">
+
+                <div class="flex items-center space-x-2">
+                    <i class="fa-solid fa-user-doctor text-luxury-gold text-2xl"></i>
+                    <a href="index.html" class="flex items-center">
+                        <span class="font-serif text-2xl font-bold tracking-wide text-medical-blue">
+                            Dr. Santosh <span class="text-luxury-gold">Gupta</span>
+                        </span>
+                    </a>
+                </div>
+
+                <div class="hidden md:flex space-x-8 items-center">
+                    <a href="index.html"
+                        class="text-medical-blue hover:text-luxury-gold font-medium tracking-wide transition">Home</a>
+                    <a href="gallery.html"
+                        class="text-medical-blue hover:text-luxury-gold font-medium transition">Gallery</a>
+                    <a href="index.html#about"
+                        class="text-medical-blue hover:text-luxury-gold font-medium tracking-wide transition">About</a>
+                    <a href="index.html#treatments"
+                        class="text-medical-blue hover:text-luxury-gold font-medium tracking-wide transition">Treatments</a>
+                    <a href="index.html#faq"
+                        class="text-medical-blue hover:text-luxury-gold font-medium tracking-wide transition">FAQs</a>
+
+                    <a href="index.html#contact"
+                        class="px-6 py-2 bg-medical-blue text-white hover:bg-luxury-gold transition rounded-full font-bold uppercase text-xs tracking-widest shadow-lg">
+                        Book Consultation
+                    </a>
+                </div>
+
+                <div class="md:hidden">
+                    <button id="mobile-menu-btn" class="text-medical-blue text-2xl focus:outline-none">
+                        <i class="fa-solid fa-bars"></i>
+                    </button>
+                </div>
+            </div>
+
+            <div id="mobile-menu"
+                class="hidden md:hidden mt-4 bg-white/95 backdrop-blur-sm rounded-xl shadow-xl p-4 absolute left-4 right-4 border border-gray-100">
+                <div class="flex flex-col space-y-4">
+                    <a href="index.html" class="text-medical-blue font-medium hover:text-luxury-gold">Home</a>
+                    <a href="index.html#about" class="text-medical-blue font-medium hover:text-luxury-gold">About</a>
+                    <a href="gallery.html" class="text-medical-blue font-medium hover:text-luxury-gold">Gallery</a>
+                    <a href="index.html#treatments"
+                        class="text-medical-blue font-medium hover:text-luxury-gold">Treatments</a>
+                    <a href="index.html#faq" class="text-medical-blue font-medium hover:text-luxury-gold">FAQs</a>
+                    <a href="index.html#contact"
+                        class="text-center w-full py-3 bg-medical-blue text-white rounded-lg hover:bg-luxury-gold">Book
+                        Consultation</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <section class="bg-medical-blue pt-40 pb-16 text-center">
+        <div class="max-w-7xl mx-auto px-6">
+            <p class="text-luxury-gold font-bold tracking-widest uppercase text-sm mb-4">Plan Your Journey</p>
+            <h1 class="font-serif text-3xl md:text-5xl font-bold text-white mb-4">Ovulation Calculator</h1>
+            <p class="text-white/80 text-lg font-light max-w-2xl mx-auto">
+                Identify your most fertile days to maximize your chances of natural conception.
+            </p>
+        </div>
+    </section>
+
+    <section class="py-16 bg-white relative">
+        <div class="max-w-4xl mx-auto px-6 lg:px-8">
+
+            <div class="bg-white rounded-2xl shadow-xl border border-gray-100 p-8 md:p-12 reveal-element">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+
+                    <div>
+                        <label class="block text-medical-blue font-bold mb-3">First Day of Last Period</label>
+                        <input type="date" id="lastPeriod"
+                            class="w-full p-4 border border-gray-300 rounded-lg focus:outline-none focus:border-luxury-gold text-gray-600">
+                    </div>
+
+                    <div>
+                        <label class="block text-medical-blue font-bold mb-3">Average Cycle Length (Days)</label>
+                        <select id="cycleLength"
+                            class="w-full p-4 border border-gray-300 rounded-lg focus:outline-none focus:border-luxury-gold text-gray-600 bg-white">
+                            <option value="21">21 Days</option>
+                            <option value="22">22 Days</option>
+                            <option value="23">23 Days</option>
+                            <option value="24">24 Days</option>
+                            <option value="25">25 Days</option>
+                            <option value="26">26 Days</option>
+                            <option value="27">27 Days</option>
+                            <option value="28" selected>28 Days (Average)</option>
+                            <option value="29">29 Days</option>
+                            <option value="30">30 Days</option>
+                            <option value="31">31 Days</option>
+                            <option value="32">32 Days</option>
+                            <option value="33">33 Days</option>
+                            <option value="34">34 Days</option>
+                            <option value="35">35 Days</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="mt-8 text-center">
+                    <button onclick="calculateFertility()"
+                        class="px-10 py-4 bg-medical-blue text-white rounded-full font-bold uppercase tracking-wider hover:bg-luxury-gold transition shadow-lg text-sm w-full md:w-auto">
+                        Calculate My Window
+                    </button>
+                </div>
+            </div>
+
+            <div id="resultsArea" class="hidden mt-12 space-y-8 reveal-element">
+
+                <div class="text-center">
+                    <h3 class="font-serif text-3xl font-bold text-medical-blue">Your Fertile Window</h3>
+                    <p class="text-gray-500 mt-2">These are the days you have the highest chance of conceiving.</p>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                    <div class="bg-soft-teal/40 p-6 rounded-xl text-center border-b-4 border-medical-blue">
+                        <p class="text-sm font-bold text-gray-500 uppercase tracking-widest mb-2">Window Starts</p>
+                        <p id="windowStart" class="text-2xl font-serif font-bold text-medical-blue">-</p>
+                    </div>
+
+                    <div class="bg-medical-blue p-6 rounded-xl text-center shadow-xl transform md:-translate-y-4">
+                        <p class="text-sm font-bold text-white/70 uppercase tracking-widest mb-2">Estimated Ovulation
+                        </p>
+                        <p id="ovulationDay" class="text-3xl font-serif font-bold text-white">-</p>
+                        <div
+                            class="mt-2 inline-block px-3 py-1 bg-luxury-gold text-white text-xs font-bold rounded-full">
+                            Peak Fertility</div>
+                    </div>
+
+                    <div class="bg-soft-teal/40 p-6 rounded-xl text-center border-b-4 border-medical-blue">
+                        <p class="text-sm font-bold text-gray-500 uppercase tracking-widest mb-2">Window Ends</p>
+                        <p id="windowEnd" class="text-2xl font-serif font-bold text-medical-blue">-</p>
+                    </div>
+                </div>
+
+                <div class="bg-gray-50 p-6 rounded-xl text-center border border-gray-100">
+                    <p class="text-gray-600">Your next period is expected around: <strong id="nextPeriod"
+                            class="text-medical-blue"></strong></p>
+                </div>
+
+                <div class="bg-yellow-50 border-l-4 border-luxury-gold p-4 text-sm text-gray-600 leading-relaxed">
+                    <strong>Note:</strong> This calculator provides an estimate based on averages. Stress, illness, and
+                    lifestyle changes can affect your cycle. It should not be used as a method of contraception.
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="py-16 bg-soft-teal/20">
+        <div class="max-w-5xl mx-auto px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row gap-12 items-center">
+                <div class="w-full md:w-1/2">
+                    <h2 class="font-serif text-3xl font-bold text-medical-blue mb-4">Understanding Your Cycle</h2>
+                    <p class="text-gray-600 leading-relaxed mb-4">
+                        Ovulation usually occurs about 14 days before your next period starts. Your "fertile window"
+                        includes the day of ovulation and the 5 days beforehand, as sperm can survive in the female body
+                        for up to 5 days.
+                    </p>
+                    <h4 class="font-bold text-medical-blue mb-2">When should you see a doctor?</h4>
+                    <ul class="space-y-2 text-gray-600 mb-6">
+                        <li><i class="fa-solid fa-circle-exclamation text-luxury-gold mr-2"></i>If your cycles are
+                            shorter than 21 days or longer than 35 days.</li>
+                        <li><i class="fa-solid fa-circle-exclamation text-luxury-gold mr-2"></i>If you have been trying
+                            for 12 months (under 35) or 6 months (over 35).</li>
+                        <li><i class="fa-solid fa-circle-exclamation text-luxury-gold mr-2"></i>If you have irregular or
+                            painful periods.</li>
+                    </ul>
+                    <a href="index.html#booking"
+                        class="text-luxury-gold font-bold hover:text-medical-blue transition">Book a Checkup <i
+                            class="fa-solid fa-arrow-right ml-1"></i></a>
+                </div>
+                <div class="w-full md:w-1/2">
+                    <img src="assets/images/gallery-8.jpg" alt="Fertility Counseling"
+                        class="rounded-xl shadow-lg border-4 border-white">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-gray-900 text-white py-12 border-t border-gray-800">
+        <div class="max-w-7xl mx-auto px-6 lg:px-8 flex flex-col md:flex-row justify-between items-center gap-6">
+            <div class="text-center md:text-left">
+                <a href="index.html" class="inline-block">
+                    <span class="font-serif text-2xl font-bold tracking-wide">
+                        Dr. Santosh <span class="text-luxury-gold">Gupta</span>
+                    </span>
+                </a>
+                <p class="text-gray-500 text-sm mt-2">© 2025 Dr. Santosh Gupta Fertility.</p>
+                <p class="text-gray-400 text-xs mt-1 max-w-xs mx-auto md:mx-0 leading-relaxed">
+                    Senior Consultant at Nova IVF Fertility<br>
+                    Serving <strong>Koramangala</strong> & <strong>Bannerghatta Road</strong>, Bengaluru.
+                </p>
+            </div>
+            <div class="flex space-x-4">
+                <a href="#"
+                    class="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center text-gray-400 hover:bg-luxury-gold hover:text-white transition duration-300">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+                <a href="#"
+                    class="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center text-gray-400 hover:bg-luxury-gold hover:text-white transition duration-300">
+                    <i class="fa-brands fa-linkedin-in"></i>
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <a href="https://wa.me/919845446536?text=Hello%20Dr.%20Santosh,%20I%20used%20the%20Ovulation%20Calculator%20and%20have%20a%20question."
+        target="_blank"
+        class="fixed bottom-6 right-6 bg-green-500 text-white w-14 h-14 rounded-full flex items-center justify-center shadow-lg hover:bg-green-600 transition-all duration-300 z-50 animate-bounce">
+        <i class="fa-brands fa-whatsapp text-3xl"></i>
+    </a>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        // Init Menu & Animation
+        const btn = document.getElementById('mobile-menu-btn');
+        const menu = document.getElementById('mobile-menu');
+        btn.addEventListener('click', () => { menu.classList.toggle('hidden'); });
+
+        document.addEventListener('DOMContentLoaded', () => {
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('active');
+                        observer.unobserve(entry.target);
+                    }
+                });
+            }, { threshold: 0.1 });
+            document.querySelectorAll('.reveal-element').forEach(el => observer.observe(el));
+        });
+
+        // Calculator Function
+        function calculateFertility() {
+            const dateInput = document.getElementById('lastPeriod').value;
+            const cycleLength = parseInt(document.getElementById('cycleLength').value);
+            const resultsArea = document.getElementById('resultsArea');
+
+            if (!dateInput) {
+                alert("Please select the first day of your last period.");
+                return;
+            }
+
+            const lastPeriod = new Date(dateInput);
+
+            // Logic: Ovulation = Last Period + Cycle Length - 14 Days
+            const ovulationDate = new Date(lastPeriod);
+            ovulationDate.setDate(lastPeriod.getDate() + cycleLength - 14);
+
+            // Fertile Window Start = Ovulation - 5 Days
+            const windowStartDate = new Date(ovulationDate);
+            windowStartDate.setDate(ovulationDate.getDate() - 5);
+
+            // Fertile Window End = Ovulation + 1 Day
+            const windowEndDate = new Date(ovulationDate);
+            windowEndDate.setDate(ovulationDate.getDate() + 1);
+
+            // Next Period = Last Period + Cycle Length
+            const nextPeriodDate = new Date(lastPeriod);
+            nextPeriodDate.setDate(lastPeriod.getDate() + cycleLength);
+
+            // Format Options
+            const options = { weekday: 'short', month: 'short', day: 'numeric' };
+
+            // Display Results
+            document.getElementById('windowStart').innerText = windowStartDate.toLocaleDateString('en-US', options);
+            document.getElementById('ovulationDay').innerText = ovulationDate.toLocaleDateString('en-US', options);
+            document.getElementById('windowEnd').innerText = windowEndDate.toLocaleDateString('en-US', options);
+            document.getElementById('nextPeriod').innerText = nextPeriodDate.toLocaleDateString('en-US', options);
+
+            // Show Section
+            resultsArea.classList.remove('hidden');
+            resultsArea.scrollIntoView({ behavior: 'smooth' });
+        }
+    </script>
+
+    <style>
+        .reveal-element {
+            opacity: 0;
+            transform: translateY(40px);
+            transition: all 1s ease-out;
+        }
+
+        .reveal-element.active {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    </style>
+</body>
+
+</html>
