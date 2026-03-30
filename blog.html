@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="description"
+        content="Fertility insights, expert advice, and advanced treatment guides from Dr. Santosh Gupta, Senior IVF Specialist in Bengaluru.">
+    <meta property="og:title" content="Fertility Hub & Insights | Dr. Santosh Gupta">
+    <meta property="og:description"
+        content="Read our latest articles on IVF, IUI, Male Infertility, and achieving a healthy pregnancy.">
+    <meta property="og:type" content="website">
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Fertility Blog & Insights | Dr. Santosh Gupta IVF Specialist</title>
+
+    <link rel="icon" href="assets/images/favicon_circle.png" type="image/png">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;600&family=Playfair+Display:ital,wght@0,400;0,600;1,400&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'medical-blue': '#2C5F78',
+                        'soft-teal': '#E0F2F1',
+                        'luxury-gold': '#D4AF37',
+                        'dark-text': '#333333',
+                        'light-text': '#666666',
+                    },
+                    fontFamily: {
+                        'serif': ['"Playfair Display"', 'serif'],
+                        'sans': ['"Lato"', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        html.lenis,
+        html.lenis body {
+            height: auto;
+            width: 100vw;
+        }
+
+        .lenis.lenis-smooth {
+            scroll-behavior: auto !important;
+        }
+
+        .lenis.lenis-smooth [data-lenis-prevent] {
+            overscroll-behavior: contain;
+        }
+
+        .lenis.lenis-stopped {
+            overflow: hidden;
+        }
+
+        .lenis.lenis-scrolling iframe {
+            pointer-events: none;
+        }
+
+        /* Reveal Animations */
+        .reveal-element {
+            opacity: 0;
+            transform: translateY(40px);
+            transition: all 1s ease-out;
+        }
+
+        .reveal-element.active {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    </style>
+</head>
+
+<body class="font-sans text-dark-text bg-soft-teal/10 antialiased flex flex-col min-h-screen">
+
+    <nav class="absolute top-0 left-0 w-full z-50 py-6 bg-white/80 backdrop-blur-md border-b border-gray-100 shadow-sm">
+        <div class="max-w-7xl mx-auto px-6 lg:px-8">
+            <div class="flex justify-between items-center">
+
+                <a href="index.html" class="flex items-center space-x-2">
+                    <i class="fa-solid fa-user-doctor text-luxury-gold text-2xl"></i>
+                    <span class="font-serif text-2xl font-bold tracking-wide text-medical-blue">
+                        Dr. Santosh <span class="text-luxury-gold">Gupta</span>
+                    </span>
+                </a>
+
+                <div class="hidden md:flex space-x-8 items-center">
+                    <a href="index.html"
+                        class="text-medical-blue hover:text-luxury-gold font-medium tracking-wide transition">Home</a>
+                    <a href="gallery.html"
+                        class="text-gray-600 hover:text-luxury-gold font-medium transition">Gallery</a>
+                    <a href="index.html#about"
+                        class="text-medical-blue hover:text-luxury-gold font-medium tracking-wide transition">About</a>
+                    <a href="index.html#treatments"
+                        class="text-medical-blue hover:text-luxury-gold font-medium tracking-wide transition">Treatments</a>
+                    <a href="blog.html"
+                        class="text-luxury-gold font-bold tracking-wide transition border-b-2 border-luxury-gold pb-1">Blog</a>
+                    <a href="index.html#faq"
+                        class="text-medical-blue hover:text-luxury-gold font-medium tracking-wide transition">FAQs</a>
+
+                    <a href="index.html#contact"
+                        class="px-6 py-2 bg-medical-blue text-white hover:bg-luxury-gold transition rounded-full font-bold uppercase text-xs tracking-widest shadow-lg">
+                        Book Consultation
+                    </a>
+                </div>
+
+                <div class="md:hidden">
+                    <button id="mobile-menu-btn" class="text-medical-blue text-2xl focus:outline-none">
+                        <i class="fa-solid fa-bars"></i>
+                    </button>
+                </div>
+            </div>
+
+            <div id="mobile-menu"
+                class="hidden md:hidden mt-4 bg-white/95 backdrop-blur-sm rounded-xl shadow-xl p-4 absolute left-4 right-4 border border-gray-100">
+                <div class="flex flex-col space-y-4">
+                    <a href="index.html" class="text-medical-blue font-medium hover:text-luxury-gold">Home</a>
+                    <a href="index.html#about" class="text-medical-blue font-medium hover:text-luxury-gold">About</a>
+                    <a href="gallery.html" class="text-medical-blue font-medium hover:text-luxury-gold">Gallery</a>
+                    <a href="index.html#treatments"
+                        class="text-medical-blue font-medium hover:text-luxury-gold">Treatments</a>
+                    <a href="blog.html" class="text-luxury-gold font-bold">Blog</a>
+                    <a href="index.html#faq" class="text-medical-blue font-medium hover:text-luxury-gold">FAQs</a>
+                    <a href="index.html#contact"
+                        class="text-center w-full py-3 bg-medical-blue text-white rounded-lg hover:bg-luxury-gold">Book
+                        Consultation</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <header class="pt-40 pb-16 md:pt-48 md:pb-24 bg-white text-center border-b border-gray-100">
+        <div class="max-w-4xl mx-auto px-6 lg:px-8 reveal-element">
+            <p class="text-luxury-gold font-bold tracking-widest uppercase text-sm mb-4">Patient Education</p>
+            <h1 class="font-serif text-4xl md:text-6xl font-bold text-medical-blue leading-tight mb-6">
+                Fertility Hub & <span class="text-luxury-gold">Insights</span>
+            </h1>
+            <p class="text-lg text-gray-600 font-light leading-relaxed max-w-2xl mx-auto">
+                Explore our library of expert articles, treatment deep-dives, and evidence-based guidance to help you
+                navigate your journey to parenthood.
+            </p>
+        </div>
+    </header>
+
+    <main class="flex-grow py-16 md:py-24">
+        <div class="max-w-7xl mx-auto px-6 lg:px-8">
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 blog-grid">
+                <div
+                    class="bg-white rounded-2xl shadow-lg hover:shadow-2xl transition duration-300 transform hover:-translate-y-1 group border border-gray-100 overflow-hidden flex flex-col h-full reveal-element">
+                    <div class="h-56 overflow-hidden relative bg-gray-100 flex items-center justify-center">
+                        <img src="assets/images/About.jpg" alt="Dr. Santosh Gupta"
+                            class="w-full h-full object-cover object-top group-hover:scale-105 transition duration-700">
+                    </div>
+                    <div class="p-8 flex flex-col flex-grow">
+                        <span class="text-luxury-gold text-xs font-bold uppercase tracking-widest mb-3 block">Meet Your
+                            Doctor</span>
+                        <h2
+                            class="font-serif text-2xl font-bold text-medical-blue mb-4 group-hover:text-luxury-gold transition leading-snug">
+                            Beyond the Stethoscope: My 25-Year Journey in Reproductive Medicine
+                        </h2>
+                        <p class="text-gray-500 text-sm leading-relaxed mb-6 flex-grow">
+                            Discover the passion, empathy, and 25 years of medical expertise that drive Dr. Santosh
+                            Gupta's approach to fertility care.
+                        </p>
+                        <div class="flex items-center justify-between border-t border-gray-100 pt-4 mt-auto">
+                            <span class="text-xs text-gray-400 font-medium"><i class="fa-regular fa-calendar mr-1"></i>
+                                Mar 31, 2026</span>
+                            <a href="my-journey-dr-santosh-gupta.html"
+                                class="text-medical-blue font-bold text-sm uppercase tracking-wide group-hover:underline flex items-center">
+                                Read More <i class="fa-solid fa-arrow-right text-xs ml-2"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div
+                    class="bg-white rounded-2xl shadow-lg hover:shadow-2xl transition duration-300 transform hover:-translate-y-1 group border border-gray-100 overflow-hidden flex flex-col h-full reveal-element">
+                    <div class="h-56 overflow-hidden relative bg-gray-100">
+                        <img src="assets/images/gallery-3.jpg" alt="Investigating IVF Failure"
+                            class="w-full h-full object-cover group-hover:scale-105 transition duration-700">
+                    </div>
+                    <div class="p-8 flex flex-col flex-grow">
+                        <span class="text-luxury-gold text-xs font-bold uppercase tracking-widest mb-3 block">IVF &
+                            Technology</span>
+                        <h2
+                            class="font-serif text-2xl font-bold text-medical-blue mb-4 group-hover:text-luxury-gold transition leading-snug">
+                            What to Do When IVF Fails: Investigating Recurrent Implantation Failure
+                        </h2>
+                        <p class="text-gray-500 text-sm leading-relaxed mb-6 flex-grow">
+                            Experienced a failed IVF cycle? Learn how we investigate RIF and the advanced protocols—like
+                            PGT-A and Hysteroscopy—used to overcome it.
+                        </p>
+                        <div class="flex items-center justify-between border-t border-gray-100 pt-4 mt-auto">
+                            <span class="text-xs text-gray-400 font-medium"><i class="fa-regular fa-calendar mr-1"></i>
+                                Apr 1, 2026</span>
+                            <a href="recurrent-implantation-failure-ivf.html"
+                                class="text-medical-blue font-bold text-sm uppercase tracking-wide group-hover:underline flex items-center">
+                                Read More <i class="fa-solid fa-arrow-right text-xs ml-2"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div
+                    class="bg-white rounded-2xl shadow-lg hover:shadow-2xl transition duration-300 transform hover:-translate-y-1 group border border-gray-100 overflow-hidden flex flex-col h-full reveal-element delay-100">
+                    <div class="h-56 overflow-hidden relative bg-gray-100 flex items-center justify-center">
+                        <img src="assets/images/gallery-6.jpg" alt="PCOS and Fertility"
+                            class="w-full h-full object-cover group-hover:scale-105 transition duration-700">
+                    </div>
+                    <div class="p-8 flex flex-col flex-grow">
+                        <span
+                            class="text-luxury-gold text-xs font-bold uppercase tracking-widest mb-3 block">Conditions</span>
+                        <h2
+                            class="font-serif text-2xl font-bold text-medical-blue mb-4 group-hover:text-luxury-gold transition leading-snug">
+                            Understanding Severe PCOS: Impacts on Fertility and Treatment Options
+                        </h2>
+                        <p class="text-gray-500 text-sm leading-relaxed mb-6 flex-grow">
+                            Polycystic Ovary Syndrome is a leading cause of infertility. Discover how tailored protocols
+                            and lifestyle adjustments can help you conceive.
+                        </p>
+                        <div class="flex items-center justify-between border-t border-gray-100 pt-4 mt-auto">
+                            <span class="text-xs text-gray-400 font-medium"><i class="fa-regular fa-calendar mr-1"></i>
+                                Mar 28, 2026</span>
+                            <a href="understanding-severe-pcos-fertility.html"
+                                class="text-medical-blue font-bold text-sm uppercase tracking-wide group-hover:underline flex items-center">
+                                Read More <i class="fa-solid fa-arrow-right text-xs ml-2"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div
+                    class="bg-white rounded-2xl shadow-lg hover:shadow-2xl transition duration-300 transform hover:-translate-y-1 group border border-gray-100 overflow-hidden flex flex-col h-full reveal-element delay-200">
+                    <div class="h-56 overflow-hidden relative bg-gray-100 flex items-center justify-center">
+                        <img src="assets/images/gallery-8.jpg" alt="Male Infertility"
+                            class="w-full h-full object-cover group-hover:scale-105 transition duration-700">
+                    </div>
+                    <div class="p-8 flex flex-col flex-grow">
+                        <span class="text-luxury-gold text-xs font-bold uppercase tracking-widest mb-3 block">Male
+                            Infertility</span>
+                        <h2
+                            class="font-serif text-2xl font-bold text-medical-blue mb-4 group-hover:text-luxury-gold transition leading-snug">
+                            Beyond Basic IUI: How Severe Male Factor is Treated with ICSI
+                        </h2>
+                        <p class="text-gray-500 text-sm leading-relaxed mb-6 flex-grow">
+                            When sperm count or motility is severely low, ICSI offers a powerful solution. Learn how
+                            this microscopic technique changes the game.
+                        </p>
+                        <div class="flex items-center justify-between border-t border-gray-100 pt-4 mt-auto">
+                            <span class="text-xs text-gray-400 font-medium"><i class="fa-regular fa-calendar mr-1"></i>
+                                Mar 29, 2026</span>
+                            <a href="male-infertility-icsi-treatment.html"
+                                class="text-medical-blue font-bold text-sm uppercase tracking-wide group-hover:underline flex items-center">
+                                Read More <i class="fa-solid fa-arrow-right text-xs ml-2"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </main>
+
+    <footer class="bg-gray-900 text-white py-12 border-t border-gray-800 mt-auto">
+        <div class="max-w-7xl mx-auto px-6 lg:px-8 flex flex-col md:flex-row justify-between items-center gap-6">
+
+            <div class="text-center md:text-left">
+                <a href="index.html" class="inline-block">
+                    <span class="font-serif text-2xl font-bold tracking-wide">
+                        Dr. Santosh <span class="text-luxury-gold">Gupta</span>
+                    </span>
+                </a>
+                <p class="text-gray-500 text-sm mt-2">© 2025 Dr. Santosh Gupta Fertility.</p>
+
+                <p class="text-gray-400 text-xs mt-1 max-w-xs mx-auto md:mx-0 leading-relaxed">
+                    Senior Consultant at Nova IVF Fertility<br>
+                    Serving <strong>Koramangala</strong> & <strong>Bannerghatta Road</strong>, Bengaluru.
+                </p>
+            </div>
+
+            <div class="flex flex-wrap justify-center gap-x-6 gap-y-3 text-sm text-gray-400 font-medium">
+                <a href="index.html" class="hover:text-luxury-gold transition">Home</a>
+                <a href="index.html#about" class="hover:text-luxury-gold transition">About</a>
+                <a href="gallery.html" class="hover:text-luxury-gold transition">Gallery</a>
+                <a href="index.html#treatments" class="hover:text-luxury-gold transition">Treatments</a>
+                <a href="blog.html" class="text-luxury-gold transition">Blog</a>
+                <a href="index.html#faq" class="hover:text-luxury-gold transition">FAQs</a>
+            </div>
+
+            <div class="flex space-x-4">
+                <a href="https://www.facebook.com/share/1DD9aXkwjm/?mibextid=wwXIfr" target="_blank"
+                    class="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center text-gray-400 hover:bg-luxury-gold hover:text-white transition duration-300">
+                    <i class="fa-brands fa-facebook-f"></i>
+                </a>
+                <a href="https://www.instagram.com/drsantosh_gupta_ivf_specialist?igsh=dGR0MWRxYnd6cjc4&utm_source=qr"
+                    target="_blank"
+                    class="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center text-gray-400 hover:bg-luxury-gold hover:text-white transition duration-300">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/santosh-gupta-ab594523b/?originalSubdomain=in" target="_blank"
+                    class="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center text-gray-400 hover:bg-luxury-gold hover:text-white transition duration-300">
+                    <i class="fa-brands fa-linkedin-in"></i>
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile Menu Toggle
+        const btn = document.getElementById('mobile-menu-btn');
+        const menu = document.getElementById('mobile-menu');
+
+        btn.addEventListener('click', () => {
+            menu.classList.toggle('hidden');
+        });
+
+        // Intersection Observer for animations
+        document.addEventListener('DOMContentLoaded', () => {
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('active');
+                        observer.unobserve(entry.target);
+                    }
+                });
+            }, { threshold: 0.1 });
+
+            const elementsToReveal = document.querySelectorAll('.reveal-element');
+            elementsToReveal.forEach(el => observer.observe(el));
+        });
+    </script>
+
+    <script src="https://unpkg.com/@studio-freight/lenis@1.0.42/dist/lenis.min.js"></script>
+    <script>
+        // Smooth Scrolling setup
+        const lenis = new Lenis({
+            duration: 1.2,
+            easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)),
+            direction: 'vertical',
+            gestureDirection: 'vertical',
+            smooth: true,
+        });
+
+        function raf(time) {
+            lenis.raf(time);
+            requestAnimationFrame(raf);
+        }
+
+        requestAnimationFrame(raf);
+    </script>
+</body>
+
+</html>
