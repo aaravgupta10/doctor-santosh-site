@@ -1,4 +1,27 @@
+# Global rule for standard search engines (Googlebot, Bingbot, etc.)
 User-agent: *
+Allow: /
+
+# Explicitly Allow Google's AI and Gemini
+User-agent: Google-Extended
+Allow: /
+
+# Explicitly Allow OpenAI (ChatGPT & SearchGPT)
+User-agent: GPTBot
+Allow: /
+User-agent: OAI-SearchBot
+Allow: /
+
+# Explicitly Allow Anthropic (Claude)
+User-agent: Anthropic-ai
+Allow: /
+
+# Explicitly Allow Perplexity
+User-agent: PerplexityBot
+Allow: /
+
+# Explicitly Allow Common Crawl (Used to train many open-source models)
+User-agent: CCBot
 Allow: /
 
 Sitemap: https://www.drsantoshguptaivf.com/sitemap.xml
