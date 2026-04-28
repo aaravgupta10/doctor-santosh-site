@@ -165,6 +165,10 @@
         .lenis.lenis-scrolling iframe {
             pointer-events: none;
         }
+    
+        .no-scrollbar::-webkit-scrollbar { display: none; }
+        .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+    
     </style>
 </head>
 
@@ -702,28 +706,28 @@
                 </a>
             </div>
 
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            
+            <div class="relative group mt-8">
+                <button id="scroll-left" class="absolute left-0 md:-left-4 top-1/2 transform -translate-y-1/2 bg-white text-medical-blue w-12 h-12 rounded-full shadow-xl z-20 flex items-center justify-center hover:bg-medical-blue hover:text-white transition focus:outline-none border border-gray-200">
+                    <i class="fa-solid fa-chevron-left"></i>
+                </button>
+                
+                <div id="reviews-container" data-lenis-prevent="true" class="flex overflow-x-auto snap-x snap-mandatory gap-6 scroll-smooth no-scrollbar py-4 px-2 items-stretch" style="-webkit-overflow-scrolling: touch;">
 
-                <div
-                    class="bg-white p-8 rounded-2xl shadow-lg border border-gray-50 flex flex-col justify-between h-full">
+                <div class="snap-center shrink-0 w-[85vw] md:w-[400px] bg-white p-8 rounded-2xl shadow-lg border border-gray-50 flex flex-col justify-between h-auto self-stretch">
                     <div>
                         <div class="flex text-luxury-gold mb-4 text-sm">
-                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
-                                class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
-                                class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
                         </div>
                         <i class="fa-solid fa-quote-left text-medical-blue/20 text-4xl mb-2"></i>
-                        <p class="text-gray-600 leading-relaxed italic text-sm">
-                            "Thanks to Doctor Santosh Gupta mam and Rakshita mam... we tried for the last 6 years but
-                            were unable to achieve pregnancy. But Doctor mam suggested with very much care... we simply
-                            followed the doctor's advice and finally, we achieved. Very very thankful to doctor mam
-                            throughout our life."
+                        <p class="text-gray-600 leading-relaxed italic text-sm overflow-y-auto max-h-[300px] no-scrollbar">
+                            "Thanks to Doctor Santosh Gupta mam and Rakshita mam... we tried for the last 6 years but were unable to achieve pregnancy. But Doctor mam suggested with very much care... we simply followed the doctor's advice and finally, we achieved. Very very thankful to doctor mam throughout our life."
                         </p>
                     </div>
-                    <div class="mt-6 pt-6 border-t border-gray-100 flex items-center space-x-4">
-                        <div
-                            class="w-10 h-10 rounded-full bg-medical-blue text-white flex items-center justify-center font-serif font-bold">
-                            S</div>
+                    <div class="mt-6 pt-6 border-t border-gray-100 flex items-center space-x-4 shrink-0">
+                        <div class="w-10 h-10 rounded-full bg-medical-blue text-white flex items-center justify-center font-serif font-bold">
+                            S
+                        </div>
                         <div>
                             <p class="font-bold text-medical-blue text-sm">Surya Lyterati</p>
                             <p class="text-xs text-gray-400">Success after 6 Years</p>
@@ -731,26 +735,20 @@
                     </div>
                 </div>
 
-                <div
-                    class="bg-white p-8 rounded-2xl shadow-lg border border-gray-50 flex flex-col justify-between h-full">
+                <div class="snap-center shrink-0 w-[85vw] md:w-[400px] bg-white p-8 rounded-2xl shadow-lg border border-gray-50 flex flex-col justify-between h-auto self-stretch">
                     <div>
                         <div class="flex text-luxury-gold mb-4 text-sm">
-                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
-                                class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
-                                class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
                         </div>
                         <i class="fa-solid fa-quote-left text-medical-blue/20 text-4xl mb-2"></i>
-                        <p class="text-gray-600 leading-relaxed italic text-sm">
-                            "Dr. Santosh Gupta and the entire team were highly professional, caring, and reassuring
-                            throughout the process. Everything was explained clearly, and I felt very well taken care
-                            of. I would definitely recommend this clinic to women considering the procedure—it was
-                            smooth, safe, and handled with great expertise."
+                        <p class="text-gray-600 leading-relaxed italic text-sm overflow-y-auto max-h-[300px] no-scrollbar">
+                            "Dr. Santosh Gupta and the entire team were highly professional, caring, and reassuring throughout the process. Everything was explained clearly, and I felt very well taken care of. I would definitely recommend this clinic to women considering the procedure—it was smooth, safe, and handled with great expertise."
                         </p>
                     </div>
-                    <div class="mt-6 pt-6 border-t border-gray-100 flex items-center space-x-4">
-                        <div
-                            class="w-10 h-10 rounded-full bg-luxury-gold text-white flex items-center justify-center font-serif font-bold">
-                            A</div>
+                    <div class="mt-6 pt-6 border-t border-gray-100 flex items-center space-x-4 shrink-0">
+                        <div class="w-10 h-10 rounded-full bg-luxury-gold text-white flex items-center justify-center font-serif font-bold">
+                            A
+                        </div>
                         <div>
                             <p class="font-bold text-medical-blue text-sm">Aditi Singhvi</p>
                             <p class="text-xs text-gray-400">Professional & Reassuring</p>
@@ -758,26 +756,20 @@
                     </div>
                 </div>
 
-                <div
-                    class="bg-white p-8 rounded-2xl shadow-lg border border-gray-50 flex flex-col justify-between h-full">
+                <div class="snap-center shrink-0 w-[85vw] md:w-[400px] bg-white p-8 rounded-2xl shadow-lg border border-gray-50 flex flex-col justify-between h-auto self-stretch">
                     <div>
                         <div class="flex text-luxury-gold mb-4 text-sm">
-                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
-                                class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
-                                class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
                         </div>
                         <i class="fa-solid fa-quote-left text-medical-blue/20 text-4xl mb-2"></i>
-                        <p class="text-gray-600 leading-relaxed italic text-sm">
-                            "Dr. Santhosh Gupta was incredibly supportive, knowledgeable, and compassionate throughout
-                            my fertility journey. Thanks to their expert guidance and care, I was able to conceive
-                            successfully. So grateful. Highly recommend to anyone seeking help with fertility and
-                            conception."
+                        <p class="text-gray-600 leading-relaxed italic text-sm overflow-y-auto max-h-[300px] no-scrollbar">
+                            "Dr. Santhosh Gupta was incredibly supportive, knowledgeable, and compassionate throughout my fertility journey. Thanks to their expert guidance and care, I was able to conceive successfully. So grateful. Highly recommend to anyone seeking help with fertility and conception."
                         </p>
                     </div>
-                    <div class="mt-6 pt-6 border-t border-gray-100 flex items-center space-x-4">
-                        <div
-                            class="w-10 h-10 rounded-full bg-medical-blue text-white flex items-center justify-center font-serif font-bold">
-                            R</div>
+                    <div class="mt-6 pt-6 border-t border-gray-100 flex items-center space-x-4 shrink-0">
+                        <div class="w-10 h-10 rounded-full bg-medical-blue text-white flex items-center justify-center font-serif font-bold">
+                            R
+                        </div>
                         <div>
                             <p class="font-bold text-medical-blue text-sm">Rekha R</p>
                             <p class="text-xs text-gray-400">Successful Conception</p>
@@ -785,6 +777,326 @@
                     </div>
                 </div>
 
+                <div class="snap-center shrink-0 w-[85vw] md:w-[400px] bg-white p-8 rounded-2xl shadow-lg border border-gray-50 flex flex-col justify-between h-auto self-stretch">
+                    <div>
+                        <div class="flex text-luxury-gold mb-4 text-sm">
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                        </div>
+                        <i class="fa-solid fa-quote-left text-medical-blue/20 text-4xl mb-2"></i>
+                        <p class="text-gray-600 leading-relaxed italic text-sm overflow-y-auto max-h-[300px] no-scrollbar">
+                            "Santosh Gupta maam is like an angel in my life and i would say to every mom's life who is enjoying motherhood just bcz of her no dc in this world is so coperative and worried as her she takes care of her patients so well we feel like a family today I'm mom just bcz of her i would be thankful to maam till my last breath"
+                        </p>
+                    </div>
+                    <div class="mt-6 pt-6 border-t border-gray-100 flex items-center space-x-4 shrink-0">
+                        <div class="w-10 h-10 rounded-full bg-luxury-gold text-white flex items-center justify-center font-serif font-bold">
+                            P
+                        </div>
+                        <div>
+                            <p class="font-bold text-medical-blue text-sm">priyanka R mahajan</p>
+                            <p class="text-xs text-gray-400">Thankful to Ma'am</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="snap-center shrink-0 w-[85vw] md:w-[400px] bg-white p-8 rounded-2xl shadow-lg border border-gray-50 flex flex-col justify-between h-auto self-stretch">
+                    <div>
+                        <div class="flex text-luxury-gold mb-4 text-sm">
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                        </div>
+                        <i class="fa-solid fa-quote-left text-medical-blue/20 text-4xl mb-2"></i>
+                        <p class="text-gray-600 leading-relaxed italic text-sm overflow-y-auto max-h-[300px] no-scrollbar">
+                            "More than a doctor, i would say Dr. Santosh Gupta is a blessing. What inspired me the most was her dedication, selfless care for patients, and the incredible energy she bring to the work. She don’t just treat patients, but genuinely care for them with all her heart. I would recommend anyone who is struggling to conceive, Dr. Santosh Gupta truly the best doctor to turn to. Words will never be enough to express my gratitude for everything you have done. Thank you for bringing happiness into so many lives and for blessing us with such precious moments of joy."
+                        </p>
+                    </div>
+                    <div class="mt-6 pt-6 border-t border-gray-100 flex items-center space-x-4 shrink-0">
+                        <div class="w-10 h-10 rounded-full bg-medical-blue text-white flex items-center justify-center font-serif font-bold">
+                            S
+                        </div>
+                        <div>
+                            <p class="font-bold text-medical-blue text-sm">Shweta H</p>
+                            <p class="text-xs text-gray-400">A Blessing</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="snap-center shrink-0 w-[85vw] md:w-[400px] bg-white p-8 rounded-2xl shadow-lg border border-gray-50 flex flex-col justify-between h-auto self-stretch">
+                    <div>
+                        <div class="flex text-luxury-gold mb-4 text-sm">
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                        </div>
+                        <i class="fa-solid fa-quote-left text-medical-blue/20 text-4xl mb-2"></i>
+                        <p class="text-gray-600 leading-relaxed italic text-sm overflow-y-auto max-h-[300px] no-scrollbar">
+                            "To begin my journey with the process Firstly,I would like to share, we have been blessed with a baby girl 👧🏻 with the help of Dr Santosh. She is truly a great inspiration value person and highly respected person.👍🏻 Really thankful to nova IVF people and process for sharing our load equally and guiding us all the way from start till end. My personal thanks to dr Santosh for not letting us down at any moment and always being patient in case of doubts and being with us in all ups n down. She has handled my case with utmost concern as it was not a simple case. With her experience She knows how to handle such a complex case. Having a baby girl with doctor’s support made me emerge better in to mother hood.🩷 My daughter is the two pink lines on my pregnancy test and also the little dot on the ultrasound screen. And now she is the little girl in my arms - the reason my world feels full of love ❤️"
+                        </p>
+                    </div>
+                    <div class="mt-6 pt-6 border-t border-gray-100 flex items-center space-x-4 shrink-0">
+                        <div class="w-10 h-10 rounded-full bg-luxury-gold text-white flex items-center justify-center font-serif font-bold">
+                            S
+                        </div>
+                        <div>
+                            <p class="font-bold text-medical-blue text-sm">sukhmeet kaur tinna</p>
+                            <p class="text-xs text-gray-400">Blessed with a Baby Girl</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="snap-center shrink-0 w-[85vw] md:w-[400px] bg-white p-8 rounded-2xl shadow-lg border border-gray-50 flex flex-col justify-between h-auto self-stretch">
+                    <div>
+                        <div class="flex text-luxury-gold mb-4 text-sm">
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                        </div>
+                        <i class="fa-solid fa-quote-left text-medical-blue/20 text-4xl mb-2"></i>
+                        <p class="text-gray-600 leading-relaxed italic text-sm overflow-y-auto max-h-[300px] no-scrollbar">
+                            "I would like to share, we have been blessed with a baby girl with the help of Dr Santosh. Really thankful to her and Nova IVF for sharing our load equally and guiding us all the way from start till end. My personal thanks to Dr. Santosh for not letting us down at any moment and always being patient in case of doubts and being with us during this emotional roller coaster. Having a baby girl with her support made our dreams come true and filled our lives with happiness. I sincerely recommend anyone having issues with getting pregnant consult with her once and weigh their options without any obligations."
+                        </p>
+                    </div>
+                    <div class="mt-6 pt-6 border-t border-gray-100 flex items-center space-x-4 shrink-0">
+                        <div class="w-10 h-10 rounded-full bg-medical-blue text-white flex items-center justify-center font-serif font-bold">
+                            R
+                        </div>
+                        <div>
+                            <p class="font-bold text-medical-blue text-sm">rajiv chavali</p>
+                            <p class="text-xs text-gray-400">Dreams Come True</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="snap-center shrink-0 w-[85vw] md:w-[400px] bg-white p-8 rounded-2xl shadow-lg border border-gray-50 flex flex-col justify-between h-auto self-stretch">
+                    <div>
+                        <div class="flex text-luxury-gold mb-4 text-sm">
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                        </div>
+                        <i class="fa-solid fa-quote-left text-medical-blue/20 text-4xl mb-2"></i>
+                        <p class="text-gray-600 leading-relaxed italic text-sm overflow-y-auto max-h-[300px] no-scrollbar">
+                            "Dr. Santosh Gupta has been nothing less than a blessing in our pregnancy journey. From the very first consultation, she made us feel comfortable, heard, and truly cared for. What stands out the most is her incredible patience—she never rushes, listens to every small concern, and explains everything so calmly and clearly. Her positive attitude and reassuring words gave us so much confidence during moments of stress and uncertainty. She always made us feel that we are in safe hands, and that feeling itself means everything during such an important phase of life. Her expertise, combined with her kind and supportive nature, makes her truly the best. Because of her, our journey felt smooth, hopeful, and much less overwhelming. We are deeply grateful for her care and guidance. I would wholeheartedly recommend Dr. Santosh Gupta to anyone looking for pregnancy or fertility support. She is not just a great doctor, but a wonderful human being who genuinely cares for her patients. ❤️"
+                        </p>
+                    </div>
+                    <div class="mt-6 pt-6 border-t border-gray-100 flex items-center space-x-4 shrink-0">
+                        <div class="w-10 h-10 rounded-full bg-luxury-gold text-white flex items-center justify-center font-serif font-bold">
+                            T
+                        </div>
+                        <div>
+                            <p class="font-bold text-medical-blue text-sm">Tanu</p>
+                            <p class="text-xs text-gray-400">Smooth & Hopeful Journey</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="snap-center shrink-0 w-[85vw] md:w-[400px] bg-white p-8 rounded-2xl shadow-lg border border-gray-50 flex flex-col justify-between h-auto self-stretch">
+                    <div>
+                        <div class="flex text-luxury-gold mb-4 text-sm">
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                        </div>
+                        <i class="fa-solid fa-quote-left text-medical-blue/20 text-4xl mb-2"></i>
+                        <p class="text-gray-600 leading-relaxed italic text-sm overflow-y-auto max-h-[300px] no-scrollbar">
+                            "Dr. Santosh Gupta is truly exceptional at what she does. One of the most important things in treatment is feeling comfortable and confident with your doctor—and she makes sure you feel exactly that. Every time I’ve had an appointment with her, I’ve walked out feeling reassured and at ease. She keeps conversations very light and calming. Even if you walk in imagining the worst about your condition, she has a way of making things feel manageable and gives you the confidence you need. She never rushes you or cuts you off when you have questions. Instead, she listens patiently and explains everything clearly. She also greets you so warmly every single time, which really adds a personal touch to the whole experience. I had my C-section with another doctor who was also very good, but I was quite anxious when I was taken into the operation theatre. The moment Dr. Santosh Gupta walked in, I instantly felt calm and relaxed—that’s the kind of impact she has. I’m truly grateful to know her and would 100% recommend her to any woman looking for a doctor who offers compassionate, judgment-free care along with excellent treatment."
+                        </p>
+                    </div>
+                    <div class="mt-6 pt-6 border-t border-gray-100 flex items-center space-x-4 shrink-0">
+                        <div class="w-10 h-10 rounded-full bg-medical-blue text-white flex items-center justify-center font-serif font-bold">
+                            S
+                        </div>
+                        <div>
+                            <p class="font-bold text-medical-blue text-sm">soundarya sivakumar</p>
+                            <p class="text-xs text-gray-400">Compassionate Care</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="snap-center shrink-0 w-[85vw] md:w-[400px] bg-white p-8 rounded-2xl shadow-lg border border-gray-50 flex flex-col justify-between h-auto self-stretch">
+                    <div>
+                        <div class="flex text-luxury-gold mb-4 text-sm">
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                        </div>
+                        <i class="fa-solid fa-quote-left text-medical-blue/20 text-4xl mb-2"></i>
+                        <p class="text-gray-600 leading-relaxed italic text-sm overflow-y-auto max-h-[300px] no-scrollbar">
+                            "Dr Santosh Gupta is the best Gynecologist,best Human in this world.She has not given us reason to live our Child only, she has filled out our life with happiness and 😊 joy.i have recommended so many people who were struggling for child and Dr Santosh Gupta has never Disappointed anyone.She always give right guidance and her advice and her experience gave so many couples chance to become parents.God bless her always"
+                        </p>
+                    </div>
+                    <div class="mt-6 pt-6 border-t border-gray-100 flex items-center space-x-4 shrink-0">
+                        <div class="w-10 h-10 rounded-full bg-luxury-gold text-white flex items-center justify-center font-serif font-bold">
+                            C
+                        </div>
+                        <div>
+                            <p class="font-bold text-medical-blue text-sm">Chhavi Khatri</p>
+                            <p class="text-xs text-gray-400">Best Gynecologist</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="snap-center shrink-0 w-[85vw] md:w-[400px] bg-white p-8 rounded-2xl shadow-lg border border-gray-50 flex flex-col justify-between h-auto self-stretch">
+                    <div>
+                        <div class="flex text-luxury-gold mb-4 text-sm">
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                        </div>
+                        <i class="fa-solid fa-quote-left text-medical-blue/20 text-4xl mb-2"></i>
+                        <p class="text-gray-600 leading-relaxed italic text-sm overflow-y-auto max-h-[300px] no-scrollbar">
+                            "There are no words to fully express my gratitude to Dr. Santosh Gupta. She didn’t just help me medically, she helped me dream, hope, and believe when I thought it might never happen. Thanks to her, I had two successful IVF journeys, and today I am blessed with two beautiful daughters, aged 7 and 3. From the very first consultation, she made me feel heard, understood, and supported. She patiently answered all my questions, cleared every doubt, and gave me the moral support I so desperately needed. There were moments of fear, anxiety, and uncertainty, but her calm guidance, encouragement, and genuine care kept me going. She celebrated every small step with me and never let me lose hope, even when the journey felt overwhelming. Because of her skill, dedication, and unwavering kindness, our family is complete. She gave us not just children, but a sense of joy, hope, and fulfillment that words cannot describe. To anyone seeking a gynaecologist who truly cares for your heart as much as your health, Dr. Santosh Gupta is nothing short of a blessing."
+                        </p>
+                    </div>
+                    <div class="mt-6 pt-6 border-t border-gray-100 flex items-center space-x-4 shrink-0">
+                        <div class="w-10 h-10 rounded-full bg-medical-blue text-white flex items-center justify-center font-serif font-bold">
+                            F
+                        </div>
+                        <div>
+                            <p class="font-bold text-medical-blue text-sm">Fathima Barkath</p>
+                            <p class="text-xs text-gray-400">Two Successful IVF Journeys</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="snap-center shrink-0 w-[85vw] md:w-[400px] bg-white p-8 rounded-2xl shadow-lg border border-gray-50 flex flex-col justify-between h-auto self-stretch">
+                    <div>
+                        <div class="flex text-luxury-gold mb-4 text-sm">
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                        </div>
+                        <i class="fa-solid fa-quote-left text-medical-blue/20 text-4xl mb-2"></i>
+                        <p class="text-gray-600 leading-relaxed italic text-sm overflow-y-auto max-h-[300px] no-scrollbar">
+                            "Dr. Santhosh Gupta has been a true blessing in our journey to parenthood. Her IVF treatment process was incredibly smooth, comfortable, and reassuring from start to finish. She explained every step clearly, which made the entire experience feel much less overwhelming. What truly amazed us was achieving success on the very first attempt. Her expertise, care, and supportive approach made all the difference. We are deeply grateful and would highly recommend her to anyone seeking fertility treatment."
+                        </p>
+                    </div>
+                    <div class="mt-6 pt-6 border-t border-gray-100 flex items-center space-x-4 shrink-0">
+                        <div class="w-10 h-10 rounded-full bg-luxury-gold text-white flex items-center justify-center font-serif font-bold">
+                            N
+                        </div>
+                        <div>
+                            <p class="font-bold text-medical-blue text-sm">N.R. Prathyusha</p>
+                            <p class="text-xs text-gray-400">Success on First Attempt</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="snap-center shrink-0 w-[85vw] md:w-[400px] bg-white p-8 rounded-2xl shadow-lg border border-gray-50 flex flex-col justify-between h-auto self-stretch">
+                    <div>
+                        <div class="flex text-luxury-gold mb-4 text-sm">
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                        </div>
+                        <i class="fa-solid fa-quote-left text-medical-blue/20 text-4xl mb-2"></i>
+                        <p class="text-gray-600 leading-relaxed italic text-sm overflow-y-auto max-h-[300px] no-scrollbar">
+                            "I cannot thank Dr Santosh enough for the incredible care, guidance, and support throughout my journey. From the very first consultation, I felt heard, understood, and reassured at every step. The doctor is not only highly knowledgeable and professional but also deeply compassionate and friendly. Every concern, no matter how small, was addressed with clarity and kindness, which made a huge difference during what can be an emotional and overwhelming time. The level of attention to detail and commitment to providing the best possible care truly stands out. I would wholeheartedly recommend Dr Santosh to anyone looking for expert care combined with genuine empathy."
+                        </p>
+                    </div>
+                    <div class="mt-6 pt-6 border-t border-gray-100 flex items-center space-x-4 shrink-0">
+                        <div class="w-10 h-10 rounded-full bg-medical-blue text-white flex items-center justify-center font-serif font-bold">
+                            A
+                        </div>
+                        <div>
+                            <p class="font-bold text-medical-blue text-sm">Anubha Suri</p>
+                            <p class="text-xs text-gray-400">Expert Care & Empathy</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="snap-center shrink-0 w-[85vw] md:w-[400px] bg-white p-8 rounded-2xl shadow-lg border border-gray-50 flex flex-col justify-between h-auto self-stretch">
+                    <div>
+                        <div class="flex text-luxury-gold mb-4 text-sm">
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                        </div>
+                        <i class="fa-solid fa-quote-left text-medical-blue/20 text-4xl mb-2"></i>
+                        <p class="text-gray-600 leading-relaxed italic text-sm overflow-y-auto max-h-[300px] no-scrollbar">
+                            "I would like to express my heartfelt gratitude and deep appreciation to Dr. Santhosh Gupta for being a true blessing in our lives. After 7 years of marriage, when we were losing hope of becoming parents, we approached her with a lot of emotional pain and uncertainty. From day one, she treated us with immense care, patience, and positivity. She listened to every concern, guided us step by step, and gave us the confidence to believe that our dream would come true. Her approach towards treatment was very systematic and thoughtful. She ensured that every investigation and procedure was done at the right time and always explained everything clearly. During difficult moments, she stood by us not just as a doctor, but as a strong support system who kept us motivated and hopeful. Throughout the entire journey, she was always approachable, kind, and encouraging. Her dedication, commitment, and personal attention made a huge difference in our lives. She monitored my condition closely and took every decision with utmost care and responsibility. With her sincere efforts and God’s grace, we were blessed with twin babies—our precious Gagan and Gaanavi. Even during my pregnancy, which was very special and sensitive, she handled everything with great care, ensuring both my safety and the babies’ well-being. During delivery, her confidence, calmness, and expertise gave us immense strength. Every moment was handled perfectly, and because of her, we were able to welcome our babies safely into this world. Today, I can proudly and emotionally say that she is not just our doctor—she is the first mother to my kids, The care, dedication, and love she has shown can never be forgotten. Choosing her was the best decision of our lives. She is an exceptional doctor and an even more wonderful human being. We will forever be grateful to her for completing our family and turning our long-awaited dream into reality. Thank you, doctor, for everything. You will always hold a very special place in our hearts."
+                        </p>
+                    </div>
+                    <div class="mt-6 pt-6 border-t border-gray-100 flex items-center space-x-4 shrink-0">
+                        <div class="w-10 h-10 rounded-full bg-luxury-gold text-white flex items-center justify-center font-serif font-bold">
+                            R
+                        </div>
+                        <div>
+                            <p class="font-bold text-medical-blue text-sm">Ruthu Vijayhubli</p>
+                            <p class="text-xs text-gray-400">Blessed with Twins</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="snap-center shrink-0 w-[85vw] md:w-[400px] bg-white p-8 rounded-2xl shadow-lg border border-gray-50 flex flex-col justify-between h-auto self-stretch">
+                    <div>
+                        <div class="flex text-luxury-gold mb-4 text-sm">
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                        </div>
+                        <i class="fa-solid fa-quote-left text-medical-blue/20 text-4xl mb-2"></i>
+                        <p class="text-gray-600 leading-relaxed italic text-sm overflow-y-auto max-h-[300px] no-scrollbar">
+                            "Dr. Santhosh Gupta is the most senior and very polite doctor and has helped me to conceive with so much complications. I am very great full to her to make my dream come true. I strongly recommend her to the people who are struggling in fertility journey. Thank u mam for ur support and confidence"
+                        </p>
+                    </div>
+                    <div class="mt-6 pt-6 border-t border-gray-100 flex items-center space-x-4 shrink-0">
+                        <div class="w-10 h-10 rounded-full bg-medical-blue text-white flex items-center justify-center font-serif font-bold">
+                            C
+                        </div>
+                        <div>
+                            <p class="font-bold text-medical-blue text-sm">Chaitra Gopalakrishna</p>
+                            <p class="text-xs text-gray-400">Dream Come True</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="snap-center shrink-0 w-[85vw] md:w-[400px] bg-white p-8 rounded-2xl shadow-lg border border-gray-50 flex flex-col justify-between h-auto self-stretch">
+                    <div>
+                        <div class="flex text-luxury-gold mb-4 text-sm">
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                        </div>
+                        <i class="fa-solid fa-quote-left text-medical-blue/20 text-4xl mb-2"></i>
+                        <p class="text-gray-600 leading-relaxed italic text-sm overflow-y-auto max-h-[300px] no-scrollbar">
+                            "I would like to share my heartfelt gratitude to Dr. Santhosh Gupta, who is truly one of the most renowned doctors with exceptional expertise in infertility. She is genuinely a boon to the field of reproductive medicine. I was suffering from endometriosis and struggling to conceive. After consulting multiple doctors without success, I was referred to her by a colleague — and meeting her changed my life. The way she explained every detail, guided me through the treatment plan, and supported me throughout the entire journey — from diagnosis to delivery — was simply outstanding. Her professionalism, optimism, and compassionate approach gave me hope when I was completely shattered. She achieved what others could not, and today I am blessed with the greatest gift of my life — my son — all thanks to her dedication and care. I will remain forever grateful to her. I wholeheartedly recommend her to anyone facing infertility challenges. She is truly one of the best."
+                        </p>
+                    </div>
+                    <div class="mt-6 pt-6 border-t border-gray-100 flex items-center space-x-4 shrink-0">
+                        <div class="w-10 h-10 rounded-full bg-luxury-gold text-white flex items-center justify-center font-serif font-bold">
+                            S
+                        </div>
+                        <div>
+                            <p class="font-bold text-medical-blue text-sm">saranya vibeen</p>
+                            <p class="text-xs text-gray-400">Exceptional Expertise</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="snap-center shrink-0 w-[85vw] md:w-[400px] bg-white p-8 rounded-2xl shadow-lg border border-gray-50 flex flex-col justify-between h-auto self-stretch">
+                    <div>
+                        <div class="flex text-luxury-gold mb-4 text-sm">
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                        </div>
+                        <i class="fa-solid fa-quote-left text-medical-blue/20 text-4xl mb-2"></i>
+                        <p class="text-gray-600 leading-relaxed italic text-sm overflow-y-auto max-h-[300px] no-scrollbar">
+                            "Madam is very talented and good person,she is giving perfect suggestion for health ,100% success rate with own experience am telling,Thank you so much Dr.Santhosh Gupta madam."
+                        </p>
+                    </div>
+                    <div class="mt-6 pt-6 border-t border-gray-100 flex items-center space-x-4 shrink-0">
+                        <div class="w-10 h-10 rounded-full bg-medical-blue text-white flex items-center justify-center font-serif font-bold">
+                            L
+                        </div>
+                        <div>
+                            <p class="font-bold text-medical-blue text-sm">Lepakshi Sweety</p>
+                            <p class="text-xs text-gray-400">100% Success Rate</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="snap-center shrink-0 w-[85vw] md:w-[400px] bg-white p-8 rounded-2xl shadow-lg border border-gray-50 flex flex-col justify-between h-auto self-stretch">
+                    <div>
+                        <div class="flex text-luxury-gold mb-4 text-sm">
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                        </div>
+                        <i class="fa-solid fa-quote-left text-medical-blue/20 text-4xl mb-2"></i>
+                        <p class="text-gray-600 leading-relaxed italic text-sm overflow-y-auto max-h-[300px] no-scrollbar">
+                            "Good"
+                        </p>
+                    </div>
+                    <div class="mt-6 pt-6 border-t border-gray-100 flex items-center space-x-4 shrink-0">
+                        <div class="w-10 h-10 rounded-full bg-luxury-gold text-white flex items-center justify-center font-serif font-bold">
+                            D
+                        </div>
+                        <div>
+                            <p class="font-bold text-medical-blue text-sm">Durai murugan</p>
+                            <p class="text-xs text-gray-400">Good Experience</p>
+                        </div>
+                    </div>
+                </div>
+
+                </div>
+                
+                <button id="scroll-right" class="absolute right-0 md:-right-4 top-1/2 transform -translate-y-1/2 bg-white text-medical-blue w-12 h-12 rounded-full shadow-xl z-20 flex items-center justify-center hover:bg-medical-blue hover:text-white transition focus:outline-none border border-gray-200">
+                    <i class="fa-solid fa-chevron-right"></i>
+                </button>
             </div>
 
             <div class="mt-8 text-center md:hidden">
@@ -1162,6 +1474,10 @@
         .delay-300 {
             transition-delay: 300ms;
         }
+    
+        .no-scrollbar::-webkit-scrollbar { display: none; }
+        .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+    
     </style>
 
     <script>
@@ -1295,6 +1611,26 @@
 
         requestAnimationFrame(raf);
     </script>
+
+    <script>
+        (function() {
+            const container = document.getElementById('reviews-container');
+            const leftBtn = document.getElementById('scroll-left');
+            const rightBtn = document.getElementById('scroll-right');
+            
+            if(container && leftBtn && rightBtn) {
+                leftBtn.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    container.scrollBy({ left: -350, behavior: 'smooth' });
+                });
+                rightBtn.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    container.scrollBy({ left: 350, behavior: 'smooth' });
+                });
+            }
+        })();
+    </script>
+
 </body>
 
 </html>
