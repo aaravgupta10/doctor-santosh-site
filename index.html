@@ -169,13 +169,21 @@
         .no-scrollbar::-webkit-scrollbar { display: none; }
         .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
     
+    
+        .swiper-button-next::after, .swiper-button-prev::after { display: none !important; }
+        .swiper-pagination-bullet { width: 12px; height: 12px; }
+
     </style>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 
     <style>
         .swiper-slide { height: auto; }
-        .reviews-swiper { padding-bottom: 3rem !important; }
+        .reviews-swiper { padding-bottom: 4rem !important; }
         .swiper-pagination-bullet-active { background: #E1C16E !important; }
+    
+        .swiper-button-next::after, .swiper-button-prev::after { display: none !important; }
+        .swiper-pagination-bullet { width: 12px; height: 12px; }
+
     </style>
 
 </head>
@@ -1137,14 +1145,12 @@
 
                     </div>
                     <!-- Pagination -->
-                    <div class="swiper-pagination !-bottom-2"></div>
+                    <div class="swiper-pagination !bottom-0"></div>
                 </div>
                 
                 <!-- Navigation Buttons (Hidden on mobile, outside on desktop) -->
-                <button class="swiper-button-prev hidden md:flex !w-12 !h-12 !bg-white !text-medical-blue !rounded-full shadow-xl border border-gray-100 !left-0 transform hover:!bg-medical-blue hover:!text-white transition group focus:outline-none after:!text-sm">
-                </button>
-                <button class="swiper-button-next hidden md:flex !w-12 !h-12 !bg-white !text-medical-blue !rounded-full shadow-xl border border-gray-100 !right-0 transform hover:!bg-medical-blue hover:!text-white transition group focus:outline-none after:!text-sm">
-                </button>
+                <button class="swiper-button-prev hidden md:flex !w-12 !h-12 !bg-white !text-medical-blue !rounded-full shadow-xl border border-gray-100 !left-0 transform hover:!bg-medical-blue hover:!text-white transition group focus:outline-none"><i class="fa-solid fa-chevron-left"></i></button>
+                <button class="swiper-button-next hidden md:flex !w-12 !h-12 !bg-white !text-medical-blue !rounded-full shadow-xl border border-gray-100 !right-0 transform hover:!bg-medical-blue hover:!text-white transition group focus:outline-none"><i class="fa-solid fa-chevron-right"></i></button>
             </div>
 
             <div class="mt-8 text-center md:hidden">
@@ -1526,6 +1532,10 @@
         .no-scrollbar::-webkit-scrollbar { display: none; }
         .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
     
+    
+        .swiper-button-next::after, .swiper-button-prev::after { display: none !important; }
+        .swiper-pagination-bullet { width: 12px; height: 12px; }
+
     </style>
 
     <script>
