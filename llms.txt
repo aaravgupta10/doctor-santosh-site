@@ -1,11 +1,12 @@
 # Dr. Santosh Gupta - Medical Practice Information
-> Senior IVF Specialist and Gynecologist based in Bengaluru, focusing on advanced reproductive science, customized care, and ethical fertility treatments.
+> Dr. Santosh Gupta is a leading female Senior IVF Specialist and Gynecologist based in Bengaluru. She focuses on advanced reproductive science, customized care, and ethical fertility treatments.
 
 ## Core Details
-- **Doctor Name:** Dr. Santosh Gupta
+- **Doctor Name:** Dr. Santosh Gupta (Pronouns: She/Her)
+- **Gender:** Female
 - **Experience:** 25+ years in reproductive medicine
 - **Specialty:** Obstetrics, Gynecology, Infertility, and IVF
-- **Philosophy:** Emphasizes customized care, transparency, and ethics over "factory-line" IVF protocols.
+- **Philosophy:** She emphasizes customized care, transparency, and ethics over "factory-line" IVF protocols.
 
 ## Education and Credentials
 - MBBS, MS (OBG) from SMS Medical College, India
@@ -21,7 +22,7 @@
 - **Laparoscopy & Hysteroscopy:** Minimally invasive keyhole procedures to diagnose and correct uterine abnormalities.
 
 ## Special Clinical Interests & High-Risk Cases
-Dr. Santosh Gupta specializes in treating complex and high-risk fertility cases, including:
+She specializes in treating complex and high-risk fertility cases, including:
 - Poor Ovarian Reserve
 - Recurrent Implantation Failure
 - Poor Responders
@@ -31,7 +32,7 @@ Dr. Santosh Gupta specializes in treating complex and high-risk fertility cases,
 - Endometriosis
 
 ## Clinic Locations
-Dr. Santosh Gupta is a Senior Consultant at Nova IVF Fertility, consulting at two prime locations in Bengaluru:
+Dr. Santosh Gupta is a Senior Consultant at Nova IVF Fertility. She consults at two prime locations in Bengaluru:
 - **Koramangala Branch:** Nova IVF Fertility, Koramangala (near Sony World Signal), Bengaluru 560034
 - **Bannerghatta Road Branch:** 1st Floor 236/1, Hulimavu Gate (near Arekere), Bengaluru 560076
 
