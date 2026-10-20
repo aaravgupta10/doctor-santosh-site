@@ -4,7 +4,7 @@
         
    <url>
       <loc>https://www.drsantoshguptaivf.com/</loc>
-      <lastmod>2026-04-29</lastmod>
+      <lastmod>2026-10-21</lastmod>
       <priority>1.00</priority>
       <image:image>
          <image:loc>https://www.drsantoshguptaivf.com/assets/images/Cover2.jpg</image:loc>
@@ -140,7 +140,7 @@
 
    <url>
       <loc>https://www.drsantoshguptaivf.com/blog.html</loc>
-      <lastmod>2026-04-29</lastmod>
+      <lastmod>2026-10-21</lastmod>
       <priority>0.80</priority>
    </url>
 
@@ -205,6 +205,16 @@
       <image:image>
          <image:loc>https://www.drsantoshguptaivf.com/assets/images/gallery-18.jpeg</image:loc>
          <image:title>Dr. Santosh Gupta discussing IVF protocols, egg quality, and PGT-A testing for women over 35</image:title>
+      </image:image>
+   </url>
+
+   <url>
+      <loc>https://www.drsantoshguptaivf.com/thin-endometrium-lining-ivf-treatment-bengaluru.html</loc>
+      <lastmod>2026-10-21</lastmod>
+      <priority>0.80</priority>
+      <image:image>
+         <image:loc>https://www.drsantoshguptaivf.com/assets/images/gallery-13.jpeg</image:loc>
+         <image:title>Dr. Santosh Gupta counseling on thin endometrium and uterine lining optimization in Bengaluru</image:title>
       </image:image>
    </url>
 

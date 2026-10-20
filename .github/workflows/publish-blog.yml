@@ -1,0 +1,65 @@
+name: Auto-Publish Blog (Mon / Wed / Fri)
+
+on:
+  schedule:
+    # Runs at 03:00 UTC every Monday, Wednesday, and Friday
+    # 03:00 UTC corresponds to 08:30 AM IST (Indian Standard Time)
+    - cron: '0 3 * * 1,3,5'
+
+  workflow_dispatch:
+    inputs:
+      force:
+        description: 'Force publish regardless of day of week'
+        required: false
+        type: boolean
+        default: false
+      slug:
+        description: 'Specific topic slug to publish (leave empty for next in queue)'
+        required: false
+        type: string
+        default: ''
+
+permissions:
+  contents: write
+
+jobs:
+  publish-blog:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Publish scheduled blog post
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+        run: |
+          CMD="python automation/publish.py"
+          if [ "${{ inputs.force }}" = "true" ]; then
+            CMD="$CMD --force"
+          fi
+          if [ -n "${{ inputs.slug }}" ]; then
+            CMD="$CMD --slug ${{ inputs.slug }}"
+          fi
+          echo "Executing: $CMD"
+          $CMD
+
+      - name: Commit and push changes
+        run: |
+          if [ -n "$(git status --porcelain)" ]; then
+            git config user.name "github-actions[bot]"
+            git config user.email "github-actions[bot]@users.noreply.github.com"
+            git add .
+            git commit -m "Auto-publish scheduled blog [skip ci]"
+            git push
+            echo "Successfully published new blog and pushed to main!"
+          else
+            echo "No changes detected. Nothing to commit."
+          fi
