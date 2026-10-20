@@ -97,7 +97,7 @@
                     </span>
                 </a>
 
-                <div class="hidden md:flex space-x-8 items-center">
+                <div class="hidden md:flex space-x-4 lg:space-x-5 xl:space-x-7 items-center">
                     <a href="index.html"
                         class="text-medical-blue hover:text-luxury-gold font-medium tracking-wide transition">Home</a>
                     <a href="gallery.html"
@@ -106,14 +106,14 @@
                         class="text-medical-blue hover:text-luxury-gold font-medium tracking-wide transition">About</a>
                     <a href="index.html#treatments"
                         class="text-medical-blue hover:text-luxury-gold font-medium tracking-wide transition">Treatments</a>
+                    <a href="second-opinion-ivf-fertility.html" class="text-medical-blue hover:text-luxury-gold font-medium tracking-wide transition">2nd Opinion</a>
                     <a href="blog.html"
                         class="text-luxury-gold font-bold tracking-wide transition border-b-2 border-luxury-gold pb-1">Blog</a>
                     <a href="index.html#reviews"
                         class="text-medical-blue hover:text-luxury-gold font-medium tracking-wide transition">Reviews</a>
                     <a href="index.html#faq"
                         class="text-medical-blue hover:text-luxury-gold font-medium tracking-wide transition">FAQs</a>
-
-                    <a href="index.html#contact"
+<a href="index.html#contact"
                         class="px-6 py-2 bg-medical-blue text-white hover:bg-luxury-gold transition rounded-full font-bold uppercase text-xs tracking-widest shadow-lg">
                         Book Consultation
                     </a>
@@ -137,7 +137,7 @@
                     <a href="blog.html" class="text-luxury-gold font-bold">Blog</a>
                     <a href="index.html#reviews" class="text-medical-blue font-medium hover:text-luxury-gold">Reviews</a>
                     <a href="index.html#faq" class="text-medical-blue font-medium hover:text-luxury-gold">FAQs</a>
-                    <a href="index.html#contact"
+<a href="index.html#contact"
                         class="text-center w-full py-3 bg-medical-blue text-white rounded-lg hover:bg-luxury-gold">Book
                         Consultation</a>
                 </div>
@@ -520,6 +520,28 @@
 
         requestAnimationFrame(raf);
     </script>
+
+    <!-- Mobile Sticky Quick Conversion Bar (Call + WhatsApp) -->
+    <div class="fixed bottom-0 left-0 right-0 z-50 bg-white/95 backdrop-blur-md border-t border-gray-200 px-4 py-3 flex items-center justify-between gap-3 shadow-[0_-4px_20px_rgba(0,0,0,0.1)] md:hidden">
+        <a href="tel:+919845446536"
+            class="flex-1 flex items-center justify-center gap-2 bg-medical-blue text-white py-3 px-4 rounded-xl font-bold text-sm shadow hover:bg-luxury-gold transition duration-200">
+            <i class="fa-solid fa-phone text-xs"></i>
+            <span>Call Doctor</span>
+        </a>
+        <a href="https://wa.me/919845446536?text=Hello%20Dr.%20Santosh,%20I%20visited%20your%20website%20and%20have%20a%20query."
+            target="_blank"
+            class="flex-1 flex items-center justify-center gap-2 bg-[#25D366] text-white py-3 px-4 rounded-xl font-bold text-sm shadow hover:bg-green-600 transition duration-200">
+            <i class="fa-brands fa-whatsapp text-lg"></i>
+            <span>WhatsApp</span>
+        </a>
+    </div>
+
+        <!-- WhatsApp Floating Action Button -->
+    <a href="https://wa.me/919845446536?text=Hello%20Dr.%20Santosh,%20I%20visited%20your%20website%20and%20have%20a%20query."
+        target="_blank"
+        class="fixed bottom-6 right-6 bg-green-500 text-white w-14 h-14 rounded-full flex items-center justify-center shadow-lg hover:bg-green-600 transition-all duration-300 z-50 animate-bounce">
+        <i class="fa-brands fa-whatsapp text-3xl"></i>
+    </a>
 </body>
 
 </html>

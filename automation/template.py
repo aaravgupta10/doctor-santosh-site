@@ -194,7 +194,7 @@ def generate_article_html(topic, date_info):
                     </span>
                 </a>
 
-                <div class="hidden md:flex space-x-8 items-center">
+                <div class="hidden md:flex space-x-4 lg:space-x-5 xl:space-x-7 items-center">
                     <a href="index.html"
                         class="text-medical-blue hover:text-luxury-gold font-medium tracking-wide transition">Home</a>
                     <a href="gallery.html"
@@ -203,6 +203,8 @@ def generate_article_html(topic, date_info):
                         class="text-medical-blue hover:text-luxury-gold font-medium tracking-wide transition">About</a>
                     <a href="index.html#treatments"
                         class="text-medical-blue hover:text-luxury-gold font-medium tracking-wide transition">Treatments</a>
+                    <a href="second-opinion-ivf-fertility.html"
+                        class="text-medical-blue hover:text-luxury-gold font-medium tracking-wide transition">2nd Opinion</a>
                     <a href="blog.html"
                         class="text-luxury-gold font-bold tracking-wide transition border-b-2 border-luxury-gold pb-1">Blog</a>
                     <a href="index.html#reviews"
@@ -230,6 +232,7 @@ def generate_article_html(topic, date_info):
                     <a href="gallery.html" class="text-medical-blue font-medium hover:text-luxury-gold">Gallery</a>
                     <a href="index.html#treatments"
                         class="text-medical-blue font-medium hover:text-luxury-gold">Treatments</a>
+                    <a href="second-opinion-ivf-fertility.html" class="text-medical-blue font-medium hover:text-luxury-gold">2nd Opinion</a>
                     <a href="blog.html" class="text-luxury-gold font-bold">Blog</a>
                     <a href="index.html#reviews" class="text-medical-blue font-medium hover:text-luxury-gold">Reviews</a>
                     <a href="index.html#faq" class="text-medical-blue font-medium hover:text-luxury-gold">FAQs</a>
@@ -332,6 +335,12 @@ def generate_article_html(topic, date_info):
             </div>
         </div>
     </footer>
+
+    <a href="https://wa.me/919845446536?text=Hello%20Dr.%20Santosh,%20I%20visited%20your%20website%20and%20have%20a%20query."
+        target="_blank"
+        class="fixed bottom-6 right-6 bg-green-500 text-white w-14 h-14 rounded-full flex items-center justify-center shadow-lg hover:bg-green-600 transition-all duration-300 z-50 animate-bounce">
+        <i class="fa-brands fa-whatsapp text-3xl"></i>
+    </a>
 
     <script>
         // Mobile Menu Toggle

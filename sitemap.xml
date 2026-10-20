@@ -12,11 +12,6 @@
       </image:image>
    </url>
 
-   <url>
-      <loc>https://www.drsantoshguptaivf.com/index.html</loc>
-      <lastmod>2026-04-29</lastmod>
-      <priority>0.80</priority>
-   </url>
 
    <url>
       <loc>https://www.drsantoshguptaivf.com/gallery.html</loc>
@@ -225,6 +220,36 @@
       <image:image>
          <image:loc>https://www.drsantoshguptaivf.com/assets/images/gallery-4.jpg</image:loc>
          <image:title>Dr. Santosh Gupta explaining sperm DNA fragmentation and male infertility solutions</image:title>
+      </image:image>
+   </url>
+
+   <url>
+      <loc>https://www.drsantoshguptaivf.com/second-opinion-ivf-fertility.html</loc>
+      <lastmod>2026-10-20</lastmod>
+      <priority>0.90</priority>
+      <image:image>
+         <image:loc>https://www.drsantoshguptaivf.com/assets/images/gallery-3.jpg</image:loc>
+         <image:title>IVF Second Opinion and Failed Cycle Evaluation by Dr. Santosh Gupta in Bengaluru</image:title>
+      </image:image>
+   </url>
+
+   <url>
+      <loc>https://www.drsantoshguptaivf.com/ivf-specialist-koramangala-hsr-layout.html</loc>
+      <lastmod>2026-10-20</lastmod>
+      <priority>0.90</priority>
+      <image:image>
+         <image:loc>https://www.drsantoshguptaivf.com/assets/images/Cover2.jpg</image:loc>
+         <image:title>Best IVF Specialist in Koramangala &amp; HSR Layout - Dr. Santosh Gupta</image:title>
+      </image:image>
+   </url>
+
+   <url>
+      <loc>https://www.drsantoshguptaivf.com/ivf-specialist-bannerghatta-jp-nagar.html</loc>
+      <lastmod>2026-10-20</lastmod>
+      <priority>0.90</priority>
+      <image:image>
+         <image:loc>https://www.drsantoshguptaivf.com/assets/images/Cover2.jpg</image:loc>
+         <image:title>Top IVF Specialist on Bannerghatta Road, JP Nagar &amp; Jayanagar - Dr. Santosh Gupta</image:title>
       </image:image>
    </url>
 
