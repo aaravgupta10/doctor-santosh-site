@@ -4,7 +4,7 @@
         
    <url>
       <loc>https://www.drsantoshguptaivf.com/</loc>
-      <lastmod>2026-10-20</lastmod>
+      <lastmod>2026-10-21</lastmod>
       <priority>1.00</priority>
       <image:image>
          <image:loc>https://www.drsantoshguptaivf.com/assets/images/Cover2.jpg</image:loc>
@@ -135,7 +135,7 @@
 
    <url>
       <loc>https://www.drsantoshguptaivf.com/blog.html</loc>
-      <lastmod>2026-10-20</lastmod>
+      <lastmod>2026-10-21</lastmod>
       <priority>0.80</priority>
    </url>
 
@@ -250,6 +250,16 @@
       <image:image>
          <image:loc>https://www.drsantoshguptaivf.com/assets/images/Cover2.jpg</image:loc>
          <image:title>Top IVF Specialist on Bannerghatta Road, JP Nagar &amp; Jayanagar - Dr. Santosh Gupta</image:title>
+      </image:image>
+   </url>
+
+   <url>
+      <loc>https://www.drsantoshguptaivf.com/natural-vs-medicated-frozen-embryo-transfer-bengaluru.html</loc>
+      <lastmod>2026-10-21</lastmod>
+      <priority>0.80</priority>
+      <image:image>
+         <image:loc>https://www.drsantoshguptaivf.com/assets/images/gallery-17.jpeg</image:loc>
+         <image:title>Dr. Santosh Gupta explaining Frozen Embryo Transfer (FET) protocols and success rates</image:title>
       </image:image>
    </url>
 
