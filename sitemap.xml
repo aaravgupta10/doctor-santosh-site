@@ -4,7 +4,7 @@
         
    <url>
       <loc>https://www.drsantoshguptaivf.com/</loc>
-      <lastmod>2026-10-26</lastmod>
+      <lastmod>2026-10-28</lastmod>
       <priority>1.00</priority>
       <image:image>
          <image:loc>https://www.drsantoshguptaivf.com/assets/images/Cover2.jpg</image:loc>
@@ -135,7 +135,7 @@
 
    <url>
       <loc>https://www.drsantoshguptaivf.com/blog.html</loc>
-      <lastmod>2026-10-26</lastmod>
+      <lastmod>2026-10-28</lastmod>
       <priority>0.80</priority>
    </url>
 
@@ -280,6 +280,16 @@
       <image:image>
          <image:loc>https://www.drsantoshguptaivf.com/assets/images/gallery-5.jpg</image:loc>
          <image:title>Dr. Santosh Gupta presenting on silent endometriosis and minimally invasive laparoscopy</image:title>
+      </image:image>
+   </url>
+
+   <url>
+      <loc>https://www.drsantoshguptaivf.com/day-3-vs-day-5-embryo-transfer-ivf-success.html</loc>
+      <lastmod>2026-10-28</lastmod>
+      <priority>0.80</priority>
+      <image:image>
+         <image:loc>https://www.drsantoshguptaivf.com/assets/images/gallery-10.jpg</image:loc>
+         <image:title>Dr. Santosh Gupta explaining Day 3 cleavage vs Day 5 blastocyst embryo transfer</image:title>
       </image:image>
    </url>
 
