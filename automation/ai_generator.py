@@ -32,7 +32,13 @@ AVAILABLE_IMAGES = [
     "assets/images/gallery-14.jpeg",
     "assets/images/gallery-16.jpeg",
     "assets/images/gallery-17.jpeg",
-    "assets/images/gallery-18.jpeg"
+    "assets/images/gallery-18.jpeg",
+    "assets/images/gallery-19.jpg",
+    "assets/images/gallery-20.jpg",
+    "assets/images/gallery-21.jpg",
+    "assets/images/gallery-22.jpg",
+    "assets/images/gallery-23.jpg",
+    "assets/images/gallery-24.jpg"
 ]
 
 SYSTEM_PROMPT = """You are an expert medical writer and SEO/GEO strategist writing on behalf of Dr. Santosh Gupta.
