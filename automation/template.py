@@ -51,6 +51,42 @@ def render_section(section):
     return ""
 
 
+# Optimal focal alignment for gallery images to ensure faces are never cut off in responsive crops:
+IMAGE_POSITIONS = {
+    # Faces located in the upper portion (portraits, standing award presentations, training workshops)
+    "assets/images/gallery-3.jpg": "center top",
+    "assets/images/gallery-5.jpg": "center top",
+    "assets/images/gallery-6.jpg": "center top",
+    "assets/images/gallery-8.jpg": "center top",
+    "assets/images/gallery-10.jpg": "center top",
+    "assets/images/gallery-11.jpg": "center top",
+    "assets/images/gallery-13.jpeg": "center 20%",
+    "assets/images/gallery-14.jpeg": "center top",
+    "assets/images/gallery-16.jpeg": "center top",
+    "assets/images/About.jpg": "center top",
+    "assets/images/gallery-22.jpg": "center top",
+    "assets/images/gallery-23.jpg": "center top",
+    "assets/images/gallery-24.jpg": "center top",
+
+    # Subjects positioned below high stage backdrops / conference screens
+    "assets/images/gallery-2.jpg": "center 38%",
+    "assets/images/gallery-4.jpg": "center 40%",
+    "assets/images/gallery-17.jpeg": "center 30%",
+    "assets/images/gallery-18.jpeg": "center 35%",
+    "assets/images/gallery-19.jpg": "center 40%",
+    "assets/images/gallery-20.jpg": "center 25%",
+    "assets/images/gallery-21.jpg": "center 25%",
+}
+
+
+def get_image_position(img_path):
+    """Returns the CSS object-position value for an image to ensure faces are preserved."""
+    if not img_path:
+        return "center top"
+    normalized = img_path.strip().replace("\\", "/")
+    return IMAGE_POSITIONS.get(normalized, "center top")
+
+
 def generate_article_html(topic, date_info):
     """
     Renders the complete HTML document for a blog article.
@@ -66,6 +102,7 @@ def generate_article_html(topic, date_info):
     meta_desc = topic.get("meta_description", "")
     og_desc = topic.get("og_description", meta_desc)
     image = topic.get("image", "assets/images/gallery-18.jpeg")
+    image_pos = topic.get("image_position") or get_image_position(image)
     image_alt = topic.get("image_alt", f"Dr. Santosh Gupta - {title}")
     cta_headline = topic.get("cta_headline", "Planning Your Fertility Journey in Bengaluru?")
     cta_text = topic.get("cta_text", "Schedule a personalized consultation with Senior IVF Specialist Dr. Santosh Gupta at Nova IVF Fertility in Koramangala or Bannerghatta Road, Bengaluru.")
@@ -268,7 +305,7 @@ def generate_article_html(topic, date_info):
 
             <div class="mb-12 rounded-xl overflow-hidden shadow-md bg-gray-100 h-72 md:h-[450px] reveal-element delay-100">
                 <img src="{image}" alt="{image_alt}"
-                    class="w-full h-full object-cover hover:scale-105 transition duration-700" style="object-position: center 40%;">
+                    class="w-full h-full object-cover hover:scale-105 transition duration-700" style="object-position: {image_pos};">
             </div>
 
             <article class="text-gray-600 leading-relaxed space-y-6 font-sans text-base md:text-lg">
@@ -404,6 +441,7 @@ def generate_blog_card_html(topic, date_info):
     category = topic.get("category", "Fertility Insights")
     excerpt = topic.get("excerpt", "")
     image = topic.get("image", "assets/images/gallery-18.jpeg")
+    image_pos = topic.get("image_position") or get_image_position(image)
     image_alt = topic.get("image_alt", title)
     date_short = date_info["short"]
 
@@ -411,7 +449,7 @@ def generate_blog_card_html(topic, date_info):
                     class="bg-white rounded-2xl shadow-lg hover:shadow-2xl transition duration-300 transform hover:-translate-y-1 group border border-gray-100 overflow-hidden flex flex-col h-full reveal-element">
                     <div class="h-56 overflow-hidden relative bg-gray-100 flex items-center justify-center">
                         <img src="{image}" alt="{image_alt}"
-                            class="w-full h-full object-cover group-hover:scale-105 transition duration-700" style="object-position: center 40%;">
+                            class="w-full h-full object-cover group-hover:scale-105 transition duration-700" style="object-position: {image_pos};">
                     </div>
                     <div class="p-8 flex flex-col flex-grow">
                         <span class="text-luxury-gold text-xs font-bold uppercase tracking-widest mb-3 block">{category}</span>
