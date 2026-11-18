@@ -173,6 +173,13 @@ def publish(date_str=None, specific_slug=None, force=False, dry_run=False):
         print(f"Use --force to publish today, or run with --slug <slug>.")
         return False
 
+    # Proactively check queue health and maintain buffer
+    try:
+        import ai_generator
+        ai_generator.auto_replenish_queue(min_buffer=3)
+    except Exception as e:
+        print(f"[INFO] Queue replenishment note: {e}")
+
     topics = load_topics()
     topic = find_next_topic(topics, specific_slug)
 

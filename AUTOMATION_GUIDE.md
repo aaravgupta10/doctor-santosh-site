@@ -47,22 +47,38 @@ python automation/publish.py --force --date 2026-10-23
 
 ---
 
-## 3. Pre-Researched Clinical Topics Queue
-In [`automation/topics.json`](automation/topics.json), 11 high-value, patient-intent topics are queued and ready for upcoming publication dates:
+## 3. Autonomous Topic Pipeline & Replenishment
+The system maintains an autonomous, self-replenishing pipeline in [`automation/topics.json`](automation/topics.json):
 
+1. **Queue Buffer Monitoring:** Every time `publish.py` executes, it verifies that at least **3 to 5 unpublished topics** are ready in the backlog.
+2. **Dual-Engine Auto-Replenishment:**
+   - **AI Generation (Gemini 2.0 / 1.5 Flash):** If `GEMINI_API_KEY` is provided, it dynamically crafts new clinical topics avoiding anything already published.
+   - **Clinical Vault Fallback:** If the API key is unavailable or fails, it automatically draws from a built-in clinical vault covering advanced reproductive topics (uNK cells, Thrombophilia, Fibroids, DuoStim, Uterine PRP, etc.), ensuring **zero publication downtime**.
+
+### Current Publication Pipeline (21 Topics Total):
 | Status | Topic Title | Target Audience / Issue |
 | :--- | :--- | :--- |
 | **Published** | *Thin Endometrial Lining in IVF: Causes, Treatments & Implantation Solutions* | Implantation / Uterine Lining (<7mm) |
-| **Queued** | *High Sperm DNA Fragmentation (DFI): Overcoming Hidden Male Infertility with ICSI* | Male Factor Infertility / Paternal DNA |
-| **Queued** | *Natural Cycle vs. Medicated FET: Which Yields Higher Success in IVF?* | Frozen Embryo Transfer / Corpus Luteum |
-| **Queued** | *Recurrent Pregnancy Loss: Root Causes, Diagnostic Workup & Proven Solutions* | Miscarriage / Thrombophilia / PGT-A |
-| **Queued** | *Silent Endometriosis: The Unseen Cause of Unexplained Infertility* | Unexplained Infertility / Laparoscopy |
-| **Queued** | *Day 3 vs. Day 5 Embryo Transfer: Why Blastocyst Culture Maximizes IVF Success* | Advanced Embryology / Lab Quality |
-| **Queued** | *DHEA & CoQ10 Before IVF: Can Supplements Improve Egg Quality After 35?* | Women 35+ / Mitochondrial Priming |
-| **Queued** | *Preventing OHSS in IVF: Modern Protocols for Safe Treatment with PCOS* | PCOS / High Reserve / Agonist Triggers |
-| **Queued** | *Unexplained Infertility: What to Do When All Your Fertility Tests Are Normal* | Frustrated couples with normal tests |
-| **Queued** | *The Two-Week Wait (2WW) After Embryo Transfer: Symptoms, Myths & Precautions* | Post-transfer anxiety / Progesterone signs |
-| **Queued** | *Donor Egg IVF for Women 40+: Emotional Considerations & High Success Rates* | Advanced Age 40+ / POI / Low AMH |
+| **Published** | *High Sperm DNA Fragmentation (DFI): Overcoming Hidden Male Infertility with ICSI* | Male Factor Infertility / Paternal DNA |
+| **Published** | *Natural Cycle vs. Medicated FET: Which Yields Higher Success in IVF?* | Frozen Embryo Transfer / Corpus Luteum |
+| **Published** | *Recurrent Pregnancy Loss: Root Causes, Diagnostic Workup & Proven Solutions* | Miscarriage / Thrombophilia / PGT-A |
+| **Published** | *Silent Endometriosis: The Unseen Cause of Unexplained Infertility* | Unexplained Infertility / Laparoscopy |
+| **Published** | *Day 3 vs. Day 5 Embryo Transfer: Why Blastocyst Culture Maximizes IVF Success* | Advanced Embryology / Lab Quality |
+| **Published** | *DHEA & CoQ10 Before IVF: Can Supplements Improve Egg Quality After 35?* | Women 35+ / Mitochondrial Priming |
+| **Published** | *Preventing OHSS in IVF: Modern Protocols for Safe Treatment with PCOS* | PCOS / High Reserve / Agonist Triggers |
+| **Published** | *Unexplained Infertility: What to Do When All Your Fertility Tests Are Normal* | Frustrated couples with normal tests |
+| **Published** | *The Two-Week Wait (2WW) After Embryo Transfer: Symptoms, Myths & Precautions* | Post-transfer anxiety / Progesterone signs |
+| **Published** | *Donor Egg IVF for Women 40+: Emotional Considerations & High Success Rates* | Advanced Age 40+ / POI / Low AMH |
+| **Published** | *DuoStim Protocol in IVF: How Double Ovarian Stimulation Maximizes Embryos for Low AMH* | Low AMH / Poor Responders / Double Stimulation |
+| **Queued** | *Uterine PRP Therapy for IVF: Restoring Thin Endometrium & Overcoming Implantation Failure* | Refractory Thin Lining (<7mm) / RIF |
+| **Queued** | *ERA, EMMA & ALICE Tests in IVF: Pinpointing Your Implantation Window & Uterine Microbiome* | Displaced Window of Implantation / Chronic Endometritis |
+| **Queued** | *ICSI, IMSI, or PICSI? Advanced Sperm Selection for High DNA Fragmentation & Male Infertility* | Severe Teratozoospermia / High DFI |
+| **Queued** | *Adenomyosis and IVF: Why an Enlarged Uterus Affects Implantation and How to Treat It* | Bulky Uterus / GnRH Down-regulation |
+| **Queued** | *PGT-A vs. PGT-M: When Should You Genetically Test Embryos Before IVF Transfer?* | Genetic Screening / Single Gene Defects / Age 35+ |
+| **Queued** | *Mini-IVF vs. Conventional IVF: Which Is Best for Diminished Ovarian Reserve After 38?* | Mild Stimulation / Poor Ovarian Responders |
+| **Queued** | *Thyroid and Fertility: How Subclinical Hypothyroidism and Anti-TPO Impact IVF Success* | Endocrine Optimization / Anti-TPO Miscarriage |
+| **Queued** | *Diagnostic Hysteroscopy Before IVF: Why Inspecting the Uterine Cavity Increases Live Births* | Uterine Polyps / Cavity Evaluation / Endometrial Injury |
+| **Queued** | *Social Egg Freezing in Bengaluru: Age, Egg Yield, Costs & What Career Professionals Must Know* | Career Women / Oocyte Vitrification / Preservation |
 
 ---
 

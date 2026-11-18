@@ -4,7 +4,7 @@
         
    <url>
       <loc>https://www.drsantoshguptaivf.com/</loc>
-      <lastmod>2026-11-09</lastmod>
+      <lastmod>2026-11-18</lastmod>
       <priority>1.00</priority>
       <image:image>
          <image:loc>https://www.drsantoshguptaivf.com/assets/images/Cover2.jpg</image:loc>
@@ -159,7 +159,7 @@
 
    <url>
       <loc>https://www.drsantoshguptaivf.com/blog.html</loc>
-      <lastmod>2026-11-09</lastmod>
+      <lastmod>2026-11-18</lastmod>
       <priority>0.80</priority>
    </url>
 
@@ -364,6 +364,16 @@
       <image:image>
          <image:loc>https://www.drsantoshguptaivf.com/assets/images/gallery-18.jpeg</image:loc>
          <image:title>Dr. Santosh Gupta discussing donor egg IVF protocols and advanced maternal age</image:title>
+      </image:image>
+   </url>
+
+   <url>
+      <loc>https://www.drsantoshguptaivf.com/duostim-protocol-ivf-low-amh-bengaluru.html</loc>
+      <lastmod>2026-11-18</lastmod>
+      <priority>0.80</priority>
+      <image:image>
+         <image:loc>https://www.drsantoshguptaivf.com/assets/images/gallery-19.jpg</image:loc>
+         <image:title>Dr. Santosh Gupta discussing DuoStim and double stimulation IVF protocols in Bengaluru</image:title>
       </image:image>
    </url>
 
